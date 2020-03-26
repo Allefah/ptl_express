@@ -1,0 +1,82 @@
+<template>
+  <div class="home-container">
+    <menu-h />
+    <div class="container">
+      <div>
+        <logo />
+        <h1 class="title">
+          PTL EXPRESS
+        </h1>
+        <div class="hr" />
+        <h2 class="subtitle">
+          Your Logistics Partner
+        </h2>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Logo from '~/components/Logo.vue'
+import MenuH from '~/components/Menu.vue'
+
+export default {
+  components: {
+    Logo,
+    MenuH
+  }
+}
+</script>
+
+<style>
+/* Sample `apply` at-rules with Tailwind CSS
+.container {
+  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+}
+*/
+
+.home-container {
+  height: 100vh;
+  background-image: url("~assets/images/012362541.png");
+  background-size: cover;
+  opacity: 0.80;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-family: "Helvetica Neue", Arial, Arial, sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: theme('colors.primary');
+}
+
+.hr {
+  margin: auto;
+  margin-top:10px;
+  margin-bottom: 15px;
+  height: 2px;
+  width: 215px;
+  background: linear-gradient(
+      90deg,
+      #F2994A 0%,
+      rgba(242, 153, 74, 0.66) 33%,
+      rgba(242, 153, 74, 0.30) 51%,
+      rgba(242, 153, 74, 0.66) 72%,
+      #F2994A 100%);
+}
+
+.subtitle {
+  font-family: "Helvetica Neue", Arial, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+</style>
