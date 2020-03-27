@@ -6,11 +6,16 @@
 */
 module.exports = {
   theme: {
+    borderColor: {
+      primary: '#FF6600',
+      secondary: '#FFB764',
+      greywhite: '#BDBDBDBD'
+    },
     colors: {
       primary: '#FF6600',
-      secondary: '#FFB764'
+      secondary: '#FFB764',
+      greywhite: '#BDBDBDBD'
     }
   },
-  variants: {},
-  plugins: []
+  variants: {}
 }
