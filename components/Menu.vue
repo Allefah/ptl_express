@@ -62,7 +62,7 @@
             <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Accees client</a>
           </li>
           <li>
-            <ul class="sm:flex lg:hidden">
+            <ul class="flex lg:hidden">
               <li class="lang-selector text-primary font-bold uppercase text-xl-900 pr-3">
                 FR
               </li>
