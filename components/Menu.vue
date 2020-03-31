@@ -1,5 +1,7 @@
 <template>
   <header class="navMenu mb-6 lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 text-primary">
+    <div id="menu-active-highlight" class="hidden lg:block bg-primary" />
+
     <div class="flex-1 flex justify-between items-center">
       <a href="#">
         <svg
@@ -42,8 +44,7 @@
       <nav>
         <ul class="lg:flex items-center justify-between text-greywhite pt-4 lg:pt-0">
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 active" href="#">Accueil</a>
-            <div class="hidden lg:block menu-highlight m-auto bg-primary" />
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 active-link" href="#">Accueil</a>
           </li>
           <li>
             <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">Ptl Express</a>
@@ -89,17 +90,41 @@
   </header>
 </template>
 
+<script>
+
+export default {
+  mounted () {
+    console.log('fef')
+    const menuHighlight = document.querySelector('div#menu-active-highlight')
+    const activeLink = document.querySelector('a.active-link')
+
+    const activeLinkPos = activeLink.getBoundingClientRect()
+    const activeLinkHeight = activeLink.offsetHeight
+    const activeLinkWidth = activeLink.offsetWidth
+
+    const verticalPosHighlight = (activeLinkWidth / 2) + activeLinkPos.left - (menuHighlight.offsetWidth / 2)
+    const horizontalPosHighlight = activeLinkHeight + activeLinkPos.top
+
+    menuHighlight.style.left = verticalPosHighlight + 'px'
+    menuHighlight.style.top = horizontalPosHighlight + 'px'
+  }
+}
+</script>
+
 <style>
   .navMenu {
-      min-height: 70px;
-      background-color: rgba(0,0,0,0.65);
+    min-height: 70px;
+    background-color: rgba(0,0,0,0.65);
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(90deg, rgba(242,153,74,1) 0%, rgba(242,153,74,1) 51%, rgba(242,153,74,1) 73%, rgba(255,102,0,0) 100%) 10;
   }
-  .menu-highlight{
+  #menu-active-highlight{
+    position: absolute;
     width: 35px;
     height: 2px;
   }
 
-  .active {
+  .active-link {
     @apply text-primary;
   }
 
