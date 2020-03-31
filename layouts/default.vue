@@ -4,6 +4,24 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      title: this.$t('page.title')
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('page.descrirption') }
+      ]
+    }
+  }
+}
+</script>
+
 <style>
 html {
   background-color: black;

@@ -44,31 +44,43 @@
       <nav>
         <ul class="lg:flex items-center justify-between text-greywhite pt-4 lg:pt-0">
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 active-link" href="#">Accueil</a>
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 active-link" href="#">
+              {{ this.$t('menu.accueil') }}
+            </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">Ptl Express</a>
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+              {{ this.$t('menu.ptl') }}
+            </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">Nos services</a>
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+              {{ this.$t('menu.services') }}
+            </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">Contact</a>
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+              {{ this.$t('menu.contact') }}
+            </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">A propos</a>
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+              {{ this.$t('menu.apropos') }}
+            </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Accees client</a>
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">
+              {{ this.$t('menu.accees') }}
+            </a>
           </li>
           <li>
             <ul class="flex lg:hidden">
               <li class="lang-selector text-primary font-bold uppercase text-xl-900 pr-3">
-                FR
+                <a href="#" @click="changeLanguage('fr')">FR</a>
               </li>
               <li class="vs bg-primary" />
               <li class="lang-selector text-greywhite font-bold uppercase text-xl-900 pl-3">
-                EN
+                <a href="#" @click="changeLanguage('en')">EN</a>
               </li>
             </ul>
           </li>
@@ -76,14 +88,14 @@
       </nav>
     </div>
 
-    <div class="menu-lang lg:flex lg:flex-1 lg:text-right hidden justify-end">
-      <ul class="lg:flex">
+    <div class="menu-lang lg:flex lg:flex-1 lg:text-right hidden justify-end ">
+      <ul class="lg:flex items-center">
         <li class="lang-selector text-primary font-bold uppercase text-xl-900 pr-3">
-          FR
+          <a href="#" @click="changeLanguage('fr')">FR</a>
         </li>
         <li class="vs bg-primary h-full" />
         <li class="lang-selector text-greywhite font-bold uppercase text-xl-900 pl-3">
-          EN
+          <a href="#" @click="changeLanguage('en')">EN</a>
         </li>
       </ul>
     </div>
@@ -94,7 +106,6 @@
 
 export default {
   mounted () {
-    console.log('fef')
     const menuHighlight = document.querySelector('div#menu-active-highlight')
     const activeLink = document.querySelector('a.active-link')
 
@@ -107,6 +118,24 @@ export default {
 
     menuHighlight.style.left = verticalPosHighlight + 'px'
     menuHighlight.style.top = horizontalPosHighlight + 'px'
+  },
+  methods: {
+    changeLanguage (lang) {
+      const currentActiveLangs = document.querySelectorAll('li.lang-selector.text-primary')
+      const toActivateLangs = document.querySelectorAll('li.lang-selector.text-greywhite')
+
+      currentActiveLangs.forEach((currentActiveLang) => {
+        currentActiveLang.classList.remove('text-primary')
+        currentActiveLang.classList.add('text-greywhite')
+      })
+
+      toActivateLangs.forEach((toActivateLang) => {
+        toActivateLang.classList.remove('text-greywhite')
+        toActivateLang.classList.add('text-primary')
+      })
+
+      this.$i18n.locale = lang
+    }
   }
 }
 </script>
@@ -130,6 +159,12 @@ export default {
 
   #menu-toggle:checked + #menu {
     display: block;
+  }
+  .lang-selector{
+    transition: all .5s ease;
+  }
+  .lang-selector:hover {
+    font-size: 1.2em;
   }
 
   .vs {

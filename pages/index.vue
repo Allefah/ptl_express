@@ -9,7 +9,7 @@
         </h1>
         <div class="hr mt-5" />
         <h2 class="subtitle mt-5">
-          Your Logistics Partner
+          {{ this.$t('home.catchPrahse') }}
         </h2>
       </div>
     </div>

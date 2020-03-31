@@ -1,0 +1,17 @@
+{
+  "page": {
+    "title": "PTL Express, votre partenaire logistique.",
+    "description": "Site de présentation des activités de PTL Express."
+  },
+  "menu": {
+    "accueil": "Accueil",
+    "ptl": "Ptl express ",
+    "services": "Nos services",
+    "contact": "Contact",
+    "apropos": "A propos",
+    "accees": "Accèes client"
+  },
+  "home": {
+    "catchPrahse": "Votre partenaire logistique." 
+  }
+}
