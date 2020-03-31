@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-6 lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 text-primary">
+  <header class="navMenu mb-6 lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 text-primary">
     <div class="flex-1 flex justify-between items-center">
       <a href="#">
         <svg
@@ -7,7 +7,9 @@
           height="40"
           viewBox="0 0 210 266"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+        >
+
           <g id="layer1">
             <g id="layer1-6">
               <g id="Group">
@@ -33,15 +35,15 @@
       </a>
     </div>
 
-    <label for="menu-toggle" class="cursor-pointer lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
-    <input class="hidden" type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg></label>
+    <input id="menu-toggle" class="hidden" type="checkbox">
 
-    <div class="uppercase font-bold hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <div id="menu" class="uppercase font-bold hidden lg:flex lg:items-center lg:w-auto w-full">
       <nav>
         <ul class="lg:flex items-center justify-between text-greywhite pt-4 lg:pt-0">
           <li>
             <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 active" href="#">Accueil</a>
-            <div class="hidden lg:block menu-highlight m-auto bg-primary"/>
+            <div class="hidden lg:block menu-highlight m-auto bg-primary" />
           </li>
           <li>
             <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">Ptl Express</a>
@@ -58,69 +60,54 @@
           <li>
             <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Accees client</a>
           </li>
+          <li>
+            <ul class="sm:flex lg:hidden">
+              <li class="lang-selector text-primary font-bold uppercase text-xl-900 pr-3">
+                FR
+              </li>
+              <li class="vs bg-primary" />
+              <li class="lang-selector text-greywhite font-bold uppercase text-xl-900 pl-3">
+                EN
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
 
     <div class="menu-lang lg:flex lg:flex-1 lg:text-right hidden justify-end">
       <ul class="lg:flex">
-        <li class="lang-selector text-primary font-bold uppercase text-xl-900 pr-3">FR</li>
-        <li class="vs bg-primary h-full"></li>
-        <li class="lang-selector text-greywhite font-bold uppercase text-xl-900 pl-3">EN</li>
+        <li class="lang-selector text-primary font-bold uppercase text-xl-900 pr-3">
+          FR
+        </li>
+        <li class="vs bg-primary h-full" />
+        <li class="lang-selector text-greywhite font-bold uppercase text-xl-900 pl-3">
+          EN
+        </li>
       </ul>
     </div>
-
   </header>
-
-<!--
-  <header class="header">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><nuxt-link to="/" class="text-primary font-bold uppercase text-lg-900 pr-6">Accueil</nuxt-link></li>
-      <li><nuxt-link to="/societe" class="text-greywhite font-bold uppercase text-lg pr-6">PTL Express</nuxt-link></li>
-      <li><nuxt-link to="/services" class="text-greywhite font-bold uppercase text-lg pr-6">Nos services</nuxt-link></li>
-      <li><nuxt-link to="/contacts" class="text-greywhite font-bold uppercase text-lg pr-6">Contacts</nuxt-link></li>
-      <li><nuxt-link to="/propos" class="text-greywhite font-bold uppercase text-lg pr-6">A propos</nuxt-link></li>
-      <li><nuxt-link to="/login" class="text-greywhite font-bold uppercase text-lg">Acces client</nuxt-link></li>
-    </ul>
-  </header> -->
-  <!-- <header class="menu flex items-center justify-center border-solid border-b-4 border-primary">
-    <div class="menu-navigation">
-      <nuxt-link to="/" class="text-primary font-bold uppercase text-lg-900 pr-6">Accueil</nuxt-link>
-      <nuxt-link to="/societe" class="text-greywhite font-bold uppercase text-lg pr-6">PTL Express</nuxt-link>
-      <nuxt-link to="/services" class="text-greywhite font-bold uppercase text-lg pr-6">Nos services</nuxt-link>
-      <nuxt-link to="/contacts" class="text-greywhite font-bold uppercase text-lg pr-6">Contacts</nuxt-link>
-      <nuxt-link to="/propos" class="text-greywhite font-bold uppercase text-lg pr-6">A propos</nuxt-link>
-      <nuxt-link to="/login" class="text-greywhite font-bold uppercase text-lg">Acces client</nuxt-link>
-    </div>
-    <div class="menu-lang items-center justify-right">
-      <div class="lang-selector text-primary font-bold uppercase text-xl-900 pr-6">FR</div>
-      <div class="vs bg-primary h-full w-5"></div>
-      <div class="lang-selector text-greywhite font-bold uppercase text-lg-900 pr-6">EN</div>
-    </div>
-  </header> -->
 </template>
 
 <style>
-.menu {
-    height: 70px;
-    background-color: rgba(0,0,0,0.65);
-}
-.menu-highlight{
-  width: 35px;
-  height: 2px;
-}
+  .navMenu {
+      min-height: 70px;
+      background-color: rgba(0,0,0,0.65);
+  }
+  .menu-highlight{
+    width: 35px;
+    height: 2px;
+  }
 
-.active {
-  @apply text-primary;
-}
+  .active {
+    @apply text-primary;
+  }
 
-#menu-toggle:checked + #menu {
-  display: block;
-}
+  #menu-toggle:checked + #menu {
+    display: block;
+  }
 
-.vs {
-  width: 1px;
-}
+  .vs {
+    width: 1px;
+  }
 </style>
