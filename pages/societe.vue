@@ -1,8 +1,7 @@
 <template>
-  <div class="home-container">
-    <div class="home-content flex justify-center text-center">
+  <div class="societe-container">
+    <div class="societe-content flex justify-center text-center">
       <div class="mt-5">
-        <logo />
         <h1 class="title mt-5">
           PTL EXPRESS
         </h1>
@@ -16,23 +15,15 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
   }
 }
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-
-.home-container {
+.societe-container {
   height: 100vh;
   background-image: url("~assets/images/012362541.png");
   background-size: cover;

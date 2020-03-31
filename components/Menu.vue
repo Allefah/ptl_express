@@ -3,7 +3,7 @@
     <div id="menu-active-highlight" class="hidden lg:block bg-primary" />
 
     <div class="flex-1 flex justify-between items-center">
-      <a href="#">
+      <a id="headerLogo" href="#">
         <svg
           width="32"
           height="40"
@@ -11,7 +11,6 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-
           <g id="layer1">
             <g id="layer1-6">
               <g id="Group">
@@ -44,32 +43,32 @@
       <nav>
         <ul class="lg:flex items-center justify-between text-greywhite pt-4 lg:pt-0">
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 active-link" href="#">
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#" to="/" @click.prevent="changePage">
               {{ this.$t('menu.accueil') }}
             </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#" to="/societe" @click.prevent="changePage">
               {{ this.$t('menu.ptl') }}
             </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#" to="/services" @click.prevent="changePage">
               {{ this.$t('menu.services') }}
             </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#" to="/contact" @click.prevent="changePage">
               {{ this.$t('menu.contact') }}
             </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#">
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400" href="#" to="/a-propos" @click.prevent="changePage">
               {{ this.$t('menu.apropos') }}
             </a>
           </li>
           <li>
-            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">
+            <a class="lg:pb-1 lg:pl-4 lg:pr-4 py-3 px-0 block border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#" to="/login" @click.prevent="changePage">
               {{ this.$t('menu.accees') }}
             </a>
           </li>
@@ -106,18 +105,21 @@
 
 export default {
   mounted () {
+    document.querySelector('a[to=\\' + this.$route.path + ']').classList.add('active-link')
+    this.clearLogo(this.$route.path)
+
     const menuHighlight = document.querySelector('div#menu-active-highlight')
     const activeLink = document.querySelector('a.active-link')
-
     const activeLinkPos = activeLink.getBoundingClientRect()
     const activeLinkHeight = activeLink.offsetHeight
-    const activeLinkWidth = activeLink.offsetWidth
+    const verticalPosHighlight = activeLinkHeight + activeLinkPos.top
 
-    const verticalPosHighlight = (activeLinkWidth / 2) + activeLinkPos.left - (menuHighlight.offsetWidth / 2)
-    const horizontalPosHighlight = activeLinkHeight + activeLinkPos.top
+    menuHighlight.style.left = '-100px'
+    menuHighlight.style.top = verticalPosHighlight + 'px'
 
-    menuHighlight.style.left = verticalPosHighlight + 'px'
-    menuHighlight.style.top = horizontalPosHighlight + 'px'
+    this.animateMenuHighlight()
+
+    window.addEventListener('resize', this.onresize)
   },
   methods: {
     changeLanguage (lang) {
@@ -135,6 +137,64 @@ export default {
       })
 
       this.$i18n.locale = lang
+    },
+    changePage (event) {
+      const currentActiveLink = document.querySelector('a.active-link')
+      const newActiveLink = event.target
+
+      currentActiveLink.classList.remove('active-link')
+      newActiveLink.classList.add('active-link')
+
+      this.animateMenuHighlight()
+
+      this.$router.push({
+        path: event.target.getAttribute('to')
+      })
+      this.clearLogo(event.target.getAttribute('to'))
+    },
+    animateMenuHighlight () {
+      const menuHighlight = document.querySelector('div#menu-active-highlight')
+
+      const activeLink = document.querySelector('a.active-link')
+      const activeLinkPos = activeLink.getBoundingClientRect()
+      const activeLinkWidth = activeLink.offsetWidth
+
+      const currentHorizontalPosHighlight = menuHighlight.getBoundingClientRect().left
+      const newHorizontalPosHighlight = (activeLinkWidth / 2) + activeLinkPos.left - (menuHighlight.offsetWidth / 2)
+
+      menuHighlight.animate([
+        { // from
+          left: currentHorizontalPosHighlight + 'px'
+        },
+        { // to
+          left: newHorizontalPosHighlight + 'px'
+        }
+      ], {
+        // timing options
+        duration: 500,
+        easing: 'ease'
+      })
+      menuHighlight.style.left = newHorizontalPosHighlight + 'px'
+    },
+    clearLogo (path) {
+      if (path === '/') {
+        document.querySelector('#headerLogo').classList.add('lg:hidden')
+      } else {
+        document.querySelector('#headerLogo').classList.remove('lg:hidden')
+      }
+    },
+    onresize (e) {
+      const menuHighlight = document.querySelector('div#menu-active-highlight')
+      const activeLink = document.querySelector('a.active-link')
+      const activeLinkHeight = activeLink.offsetHeight
+      const activeLinkWidth = activeLink.offsetWidth
+      const activeLinkPos = activeLink.getBoundingClientRect()
+
+      const verticalPosHighlight = activeLinkHeight + activeLinkPos.top
+      const horizontalPosHighlight = (activeLinkWidth / 2) + activeLinkPos.left - (menuHighlight.offsetWidth / 2)
+
+      menuHighlight.style.left = horizontalPosHighlight + 'px'
+      menuHighlight.style.top = verticalPosHighlight + 'px'
     }
   }
 }
@@ -142,10 +202,15 @@ export default {
 
 <style>
   .navMenu {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
     min-height: 70px;
     background-color: rgba(0,0,0,0.65);
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(90deg, rgba(242,153,74,1) 0%, rgba(242,153,74,1) 51%, rgba(242,153,74,1) 73%, rgba(255,102,0,0) 100%) 10;
+    z-index: 1000;
   }
   #menu-active-highlight{
     position: absolute;

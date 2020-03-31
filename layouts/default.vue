@@ -1,11 +1,17 @@
 <template>
   <div>
+    <menu-h />
     <nuxt />
   </div>
 </template>
 
 <script>
+import MenuH from '~/components/Menu.vue'
+
 export default {
+  components: {
+    MenuH
+  },
   data () {
     return {
       title: this.$t('page.title')
