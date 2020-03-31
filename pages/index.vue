@@ -1,14 +1,14 @@
 <template>
   <div class="home-container">
     <menu-h />
-    <div class="container">
-      <div>
+    <div class="home-content flex justify-center text-center">
+      <div class="mt-5">
         <logo />
-        <h1 class="title">
+        <h1 class="title mt-5">
           PTL EXPRESS
         </h1>
-        <div class="hr" />
-        <h2 class="subtitle">
+        <div class="hr mt-5" />
+        <h2 class="subtitle mt-5">
           Your Logistics Partner
         </h2>
       </div>
@@ -39,13 +39,11 @@ export default {
   height: 100vh;
   background-image: url("~assets/images/012362541.png");
   background-size: cover;
+  background-position: center;
   opacity: 0.80;
 }
-.container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.home-content {
+  padding-top: 100px;
 }
 
 .title {
