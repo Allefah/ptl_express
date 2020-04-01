@@ -13,5 +13,12 @@
   },
   "home": {
     "catchPrahse": "Votre partenaire logistique." 
+  },
+  "societe" : {
+    "pitch": "Lourd de ses 90 kgs, le directeur PDG de la société affirme qu’il saura gérer vos flux.<br><br>Grâce a une armée de polonais plus véroce les uns que les autres, nos prix restes imbattables malgrès les fluctutations à forte prévalences du marché européen.<br><br>PTL Express se reserve le droit de ne pas facturer ses transporteurs, nonobstant toute demande de transport sera due<br>",
+    "hero1": "polyvalence",
+    "hero2": "flexibilité",
+    "hero3": "greg",
+    "hero4": "rapide"
   }
 }

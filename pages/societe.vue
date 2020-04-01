@@ -1,15 +1,31 @@
 <template>
   <div class="societe-container">
-    <div class="societe-content">
-      <div class="break-line" />
-      <div class="mt-5">
-        <h1 class="title mt-5 text-primary">
-          <span class="text-6xl">PTL</span> <span class="text-4xl">EXPRESS</span>
+    <div class="societe-content margin-auto">
+
+      <div class="break-line hidden lg:block" />
+      <div class="content-1">
+        <h1 class="title mt-5 text-primary text-center">
+          <span class="lg:text-6xl text-4xl">PTL</span> <span class="text-2xl lg:text-4xl text-secondary">EXPRESS</span>
         </h1>
-        <div class="hr mt-5" />
-        <h2 class="subtitle mt-5">
-          {{ this.$t('home.catchPrahse') }}
-        </h2>
+        <div class="break-line lg:hidden m-auto" />
+        <div class="text-white mt-4" v-html="this.$t('societe.pitch')" />
+      </div>
+
+      <h2 class="hero-title text-xl lg:text-2xl text-white font-bold text-center mt-4">POURQUOI NOUS ?</h2>
+
+      <div class="hero-container grid grid-rows-4 lg:grid-cols-4 text-primary ml-6 mr-6 ">
+        <div class="hero flex-grow m-6 bg-primary">
+          <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">{{this.$t("societe.hero1")}}</h3>
+        </div>
+        <div class="hero flex-grow m-6 bg-primary">
+          <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">{{this.$t("societe.hero2")}}</h3>
+        </div>
+        <div class="hero flex-grow m-6 bg-primary">
+          <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">{{this.$t("societe.hero3")}}</h3>
+        </div>
+        <div class="hero flex-grow m-6 bg-primary">
+          <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">{{this.$t("societe.hero4")}}</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -18,8 +34,6 @@
 <script>
 
 export default {
-  components: {
-  }
 }
 </script>
 
@@ -33,6 +47,8 @@ export default {
 }
 .societe-content {
   padding-top: 183px;
+  overflow: auto;
+  height: 100%;
 }
 .break-line {
   height : 3px;
@@ -45,7 +61,27 @@ export default {
     rgba(242, 153, 74, 0.66) 72.4%,
     #F2994A 100%);
 }
-
+.content-1 {
+  margin-left: 300px;
+  max-width: 50%;
+  text-align: justify;
+}
+.hero {
+  background-color: rgba(0,0,0,0.65);
+}
+@media (max-width: 900px) {
+  .societe-content {
+    padding-top: 100px;
+    overflow: scroll;
+  }
+  .content-1{
+    margin: auto;
+    max-width: 80%;
+  }
+  .break-line {
+    width: 50%;
+  }
+}
 .title {
   display: block;
   font-family: "Helvetica Neue", Arial, Arial, sans-serif;
