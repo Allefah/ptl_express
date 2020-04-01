@@ -1,9 +1,10 @@
 <template>
   <div class="societe-container">
-    <div class="societe-content flex justify-center text-center">
+    <div class="societe-content">
+      <div class="break-line" />
       <div class="mt-5">
-        <h1 class="title mt-5">
-          PTL EXPRESS
+        <h1 class="title mt-5 text-primary">
+          <span class="text-6xl">PTL</span> <span class="text-4xl">EXPRESS</span>
         </h1>
         <div class="hr mt-5" />
         <h2 class="subtitle mt-5">
@@ -25,22 +26,31 @@ export default {
 <style>
 .societe-container {
   height: 100vh;
-  background-image: url("~assets/images/012362541.png");
+  background-image: url("~assets/images/332857.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.80;
 }
-.home-content {
-  padding-top: 100px;
+.societe-content {
+  padding-top: 183px;
+}
+.break-line {
+  height : 3px;
+  width: 376px;
+  background-image: linear-gradient(
+    90deg,
+    #F2994A 0%,
+    rgba(242, 153, 74, 0.66) 33.33%,
+    rgba(242, 153, 74, 0.3073) 51.04%,
+    rgba(242, 153, 74, 0.66) 72.4%,
+    #F2994A 100%);
 }
 
 .title {
   display: block;
   font-family: "Helvetica Neue", Arial, Arial, sans-serif;
-  font-size: 40px;
   font-style: italic;
   font-weight: bold;
-  color: theme('colors.primary');
 }
 
 .hr {
