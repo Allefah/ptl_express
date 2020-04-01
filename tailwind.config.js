@@ -15,7 +15,8 @@ module.exports = {
       primary: '#FF6600',
       secondary: '#FFB764',
       greywhite: '#BDBDBDBD',
-      white: '#ffffff'
+      white: '#ffffff',
+      black: "#000000"
     }
   },
   variants: {}
