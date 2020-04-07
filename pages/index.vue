@@ -2,7 +2,7 @@
   <div class="home-container">
     <div class="home-content flex justify-center text-center">
       <div class="mt-5">
-        <logo />
+        <logo width="139" height="107" color="#FF6600" />
         <h1 class="title mt-5">
           PTL EXPRESS
         </h1>
