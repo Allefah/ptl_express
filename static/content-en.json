@@ -1,4 +1,9 @@
 {
+  "dict": {
+    "ou": "OR",
+    "envoyer": "Send",
+    "connexion": "Log in"
+  },
   "page": {
     "title": "PTL Express, your logistics partner.",
     "description": "Présentation website of PTL Express's activities."
@@ -15,6 +20,30 @@
     "catchPrahse": "Your Logistics Partner." 
   },
   "societe" : {
-    "pitch": "verzzefg zefzefze<br> fze fze fezfzef"
-  }
+    "pitch": "Amazinz<br> Believe us we are here for you !",
+    "hero1": "Strengthness",
+    "hero2": "Smoothness",
+    "hero3": "Believenes",
+    "hero4": "Fastinesly"
+  },
+  "service" : {
+    "s1": "Express shipping",
+    "s2": "Palets service",
+    "s3": "Logistics",
+    "s4": "Fairs & Shows"
+  },
+  "contact": {
+    "titre1": "Contact",
+    "titre2": "Us",
+    "numero": "03.88.38.28.33",
+    "rappel": "Call me back, for free",
+    "modeTel": "Phone",
+    "modeCourrier": "Post",
+    "modeFormulaire": "Contact form",
+    "horaireTel": "Monday to Wednesday 8h-19h",
+    "adresse": "5 avenue Georges Bataille<br>60330 Le Plessis Belleville<br>France"
+   },
+   "apropos": {
+     "titre": "About"
+   }
 }
