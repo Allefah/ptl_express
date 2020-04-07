@@ -1,4 +1,9 @@
 {
+  "dict": {
+    "ou": "OU",
+    "envoyer": "Envoyer",
+    "connexion": "Se connecter"
+  },
   "page": {
     "title": "PTL Express, votre partenaire logistique.",
     "description": "Site de présentation des activités de PTL Express."
@@ -20,5 +25,25 @@
     "hero2": "flexibilité",
     "hero3": "greg",
     "hero4": "rapide"
-  }
+  },
+  "service" : {
+    "s1": "Service express",
+    "s2": "Service palette",
+    "s3": "Service logistique",
+    "s4": "Service salon"
+  },
+  "contact": {
+    "titre1": "Nous",
+    "titre2": "Contacter",
+    "numero": "03.88.38.28.33",
+    "rappel": "Se faire rappeleler gratuitement",
+    "modeTel": "Par téléphone",
+    "modeCourrier": "Par courrier",
+    "modeFormulaire": "Formulaire de contact",
+    "horaireTel": "Du lundi au jeudi de 8h à 19h",
+    "adresse": "5 avenue Georges Bataille<br>60330 Le Plessis Belleville<br>France"
+   },
+   "apropos": {
+     "titre": "A propos"
+   }
 }

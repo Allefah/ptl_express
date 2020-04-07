@@ -1,5 +1,5 @@
 <template>
-  <header class="navMenu mb-6 lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 text-primary">
+  <header class="navigationMenu lg:px-16 px-6 bg-white flex flex-wrap items-center py-2 text-primary">
     <div id="menu-active-highlight" class="hidden lg:block bg-primary" />
 
     <div class="flex-1 flex justify-between items-center">
@@ -146,6 +146,10 @@ export default {
       newActiveLink.classList.add('active-link')
 
       this.animateMenuHighlight()
+      const menuToogle = document.querySelector('#menu-toggle')
+      if (menuToogle.checked) {
+        menuToogle.checked = !menuToogle.checked
+      }
 
       this.$router.push({
         path: event.target.getAttribute('to')
@@ -201,12 +205,12 @@ export default {
 </script>
 
 <style>
-  .navMenu {
-    position: absolute;
+  .navigationMenu {
+    /* position: absolute;
     top:0;
     right: 0;
-    left: 0;
-    min-height: 70px;
+    left: 0; */
+    /* min-height: 70px; */
     background-color: rgba(0,0,0,0.65);
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(90deg, rgba(242,153,74,1) 0%, rgba(242,153,74,1) 51%, rgba(242,153,74,1) 73%, rgba(255,102,0,0) 100%) 10;

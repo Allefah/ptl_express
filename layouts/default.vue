@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="nuxt_default">
     <menu-h />
     <nuxt />
   </div>
@@ -21,15 +21,15 @@ export default {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.$t('page.descrirption') }
+        { hid: 'description', name: 'description', content: this.$t('page.description') }
       ]
     }
   }
 }
 </script>
 
-<style>
-html {
+<style >
+html, body {
   background-color: black;
   font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   font-size: 16px;
@@ -39,10 +39,17 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  width:100%;
   overflow: hidden;
 }
 
+html, body, #__nuxt, #__layout, #nuxt_default {
+  width:100%;
+  height: 100%;
+}
+#nuxt_default {
+  display: flex;
+  flex-direction: column;
+}
 *,
 *:before,
 *:after {
