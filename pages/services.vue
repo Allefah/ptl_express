@@ -65,7 +65,7 @@ export default {
   background-position: center;
 }
 .service-salon {
-  background-image: url("~assets/images/00253569.jpg");
+  background-image: url("~assets/images/00253569.JPG");
   background-size: cover;
   background-position: center;
 }
