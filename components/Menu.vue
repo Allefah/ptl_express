@@ -4,7 +4,7 @@
 
     <div class="flex-1 flex justify-between items-center">
       <a id="headerLogo" href="#">
-        <logo width="60" height="60" color="#BDBDBDBD" />
+        <logo width="40" height="40" color="#BDBDBDBD" />
       </a>
     </div>
 
