@@ -45,10 +45,10 @@ export default {
 
 .title {
   display: block;
-  font-family: "Helvetica Neue", Arial, Arial, sans-serif;
+  font-family: "Barlow", "Helvetica Neue", Arial, sans-serif;
   font-size: 40px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 900;
   color: theme('colors.primary');
 }
 
@@ -68,9 +68,9 @@ export default {
 }
 
 .subtitle {
-  font-family: "Helvetica Neue", Arial, Arial, sans-serif;
+  font-family: "Barlow", serif;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
   color: #FFFFFF;
 }

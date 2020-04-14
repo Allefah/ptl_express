@@ -4,7 +4,7 @@
       <div class="break-line hidden lg:block lg:mt-6" />
 
       <div class="content text-justify m-auto">
-        <h1 class="title lg:m-0 text-primary text-center lg:text-left">
+        <h1 class="pageTitle lg:m-0 text-primary text-center lg:text-left">
           <span class="lg:text-6xl text-4xl">PTL</span> <span class="text-2xl lg:text-4xl text-secondary">EXPRESS</span>
         </h1>
         <div class="break-line lg:hidden m-auto" />
@@ -72,7 +72,7 @@ export default {
 .content {
     max-width: 80%;
 }
-.title {
+.pageTitle {
   display: block;
   font-family: "Helvetica Neue", Arial, Arial, sans-serif;
   font-style: italic;

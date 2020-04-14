@@ -23,11 +23,9 @@
 export default {
   props: {
     height: {
-      type: Number,
       required: true
     },
     width: {
-      type: Number,
       required: true
     },
     color: {

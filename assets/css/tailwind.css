@@ -4,3 +4,55 @@
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 100;
+  src: url('~assets/fonts/Barlow-Thin.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 200;
+  src: url('~assets/fonts/Barlow-ExtraLight.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 300;
+  src: url('~assets/fonts/Barlow-Light.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: normal;
+  src: url('~assets/fonts/Barlow-Regular.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 500;
+  src: url('~assets/fonts/Barlow-Medium.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 600;
+  src: url('~assets/fonts/Barlow-SemiBold.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: bold;
+  src: url('~assets/fonts/Barlow-Bold.ttf');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 800;
+  src: url('~assets/fonts/Barlow-ExtraBold.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 900;
+  src: url('~assets/fonts/Barlow-Black.ttf') format('ttf'),
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 800;
+  src: url('~assets/fonts/Barlow-BlackItalic.ttf') format('ttf');
+  font-style: italic;
+}

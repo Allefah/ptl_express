@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <div class="vr w-px bg-primary mr-6"></div>
+        <div class="vr w-px bg-primary mr-6" />
 
         <div class="contactBloc text-center m-6 p-4 m-auto lg:m-0 lg:flex-1">
           <h2 class="text-primary text-left text-2xl">
@@ -53,7 +53,7 @@
           </div>
         </div>
 
-        <div class="vr w-px bg-primary mr-6"></div>
+        <div class="vr w-px bg-primary mr-6" />
 
         <div class="contactBloc text-center m-6 p-4 m-auto lg:m-0 lg:flex-1">
           <h2 class="text-primary text-left text-2xl">
