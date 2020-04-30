@@ -36,6 +36,7 @@
           <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">
             {{ this.$t("societe.hero4") }}
           </h3>
+          Quelque soit votre problème ensemble nous trouverons une solution.
         </div>
       </div>
     </div>
