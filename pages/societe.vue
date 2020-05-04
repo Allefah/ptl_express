@@ -21,21 +21,26 @@
           <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">
             {{ this.$t("societe.hero1") }}
           </h3>
+          <img src="~assets/images/efficacite.jpg" />
         </div>
         <div class="hero flex-grow m-6 bg-blackLight">
           <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">
             {{ this.$t("societe.hero2") }}
           </h3>
+          <img src="~assets/images/flexibilite.jpg" />
         </div>
         <div class="hero flex-grow m-6 bg-blackLight">
           <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">
             {{ this.$t("societe.hero3") }}
           </h3>
+
+          <img src="~assets/images/polyvalence.jpg" />
         </div>
         <div class="hero flex-grow m-6 bg-blackLight">
           <h3 class="hero-title text-primary text-lg font-bold text-center uppercase">
             {{ this.$t("societe.hero4") }}
           </h3>
+          <img src="~assets/images/humain.jpg" />
           Quelque soit votre problème ensemble nous trouverons une solution.
         </div>
       </div>
