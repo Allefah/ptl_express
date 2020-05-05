@@ -1,5 +1,4 @@
 <template>
-    <div id="menu" class="uppercase font-bold hidden lg:flex lg:items-center lg:w-auto w-full">
   <header class="site-header p-8 bg-primary">
     <div class="container flex">
       <div class="logo m-1">
