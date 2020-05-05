@@ -17,7 +17,7 @@ module.exports = {
       greywhite: '#BDBDBDBD'
     },
     colors: {
-      primary: '#FF6600',
+      primary: '#204566',
       secondary: '#FFB764',
       secondaryLight: 'rgba(255, 183, 100, 0.5)',
       greywhite: '#BDBDBDBD',
