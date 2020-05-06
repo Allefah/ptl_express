@@ -30,7 +30,7 @@ export default {
   plugins: [
     '~/plugins/i18n.js',
     '~/plugins/fontawesome.js',
-    '~/plugins/horizontallist.js'
+    { src: '~/plugins/horizontallist.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

@@ -17,14 +17,9 @@ module.exports = {
       '3/4': '75%',
       full: '100%'
     },
-    borderColor: {
-      primary: '#FF6600',
-      secondary: '#FFB764',
-      greywhite: '#BDBDBDBD'
-    },
     colors: {
       primary: '#204566',
-      secondary: '#FFB764',
+      secondary: '#232331',
       secondaryLight: 'rgba(255, 183, 100, 0.5)',
       white: '#FFFFFF',
       lightwhite: '#F3F3F3',

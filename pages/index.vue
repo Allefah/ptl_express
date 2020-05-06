@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="-mt-6">
     <vue-horizontal-list :items="items" :options="options">
       <template v-slot:default="{item}">
         <div class="item">
@@ -8,13 +8,35 @@
       </template>
     </vue-horizontal-list>
 
-    <div id="societe" class="bloc bg-primary">
+    <div id="societe" class="bg-primary mt-8 py-16 px-6 text-white">
       <div>
-        <h1>PTL EXPRESS</h1>
+        <h1 class="pb-3 font-bold">
+          PTL EXPRESS
+        </h1>
         <p>Nous sommes une jeune société de transport et d'affrètement en plein développement. Nous nous spécialisons dans le transport express de petit volume dans toute l'Europe. Nous sommes devenus en peu de temps une société polonaise dominante sur le marché français. Notre équipe est jeune, dynamique et qualifiée, prête à relever chaque défi.</p>
       </div>
-      <div>
+      <div class="pt-16">
         <img src="~assets/images/societe.jpg" alt="">
+      </div>
+    </div>
+
+    <div id="services" class="py-16 px-6 ">
+      <h1 class="text-center uppercase font-black text-lg text-primary">
+        Nos services
+      </h1>
+      <div>
+        <div class="flex bg-secondary text-white items-center">
+          <div class="bg-primary p-4">
+            <font-awesome-icon icon="arrow-right" />
+          </div>
+          <div class="p-4">
+            Service exploitation
+          </div>
+        </div>
+
+        <div class="p-4 border border-gray-100">
+          Blala blal balablblbazlbabl...
+        </div>
       </div>
     </div>
   </div>
@@ -27,11 +49,15 @@ export default {
   data () {
     return {
       options: {
+        item: {
+          class: 'p-0 pt-0',
+          padding: 12
+        },
         responsive: [
           { start: 1, size: 1 }
         ],
         list: {
-          windowed: 1
+          windowed: 200
         }
       },
       navigation: {
