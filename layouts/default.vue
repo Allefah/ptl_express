@@ -1,5 +1,35 @@
 <template>
   <div id="nuxt_default">
+    <nav id="menu" class="hidden bg-lightwhite absolute inset-y-0 left-0 min-w-3/4">
+      <div class="flex flex-col">
+        <div class="text-center text-xblack p-2">
+          <h1>Menu</h1>
+        </div>
+
+        <hr class="text-xblack">
+
+        <div class="uppercase">
+          <ul class="text-sm ml-4">
+            <li class="my-2 mr-3">
+              Qui sommes nous ?
+            </li>
+            <hr class="text-xblack">
+            <li class="my-2 mr-3">
+              Nos services
+            </li>
+            <hr class="text-xblack">
+            <li class="my-2 mr-3">
+              Nous contacter
+            </li>
+            <hr class="text-xblack">
+            <li class="my-2 mr-3">
+              Devis transport
+            </li>
+            <hr class="text-xblack">
+          </ul>
+        </div>
+      </div>
+    </nav>
     <menu-h />
     <nuxt />
   </div>

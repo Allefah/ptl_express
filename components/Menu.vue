@@ -1,12 +1,12 @@
 <template>
-  <header class="site-header p-8 bg-primary">
+  <header class="site-header p-8 bg-primary text-white">
     <div class="container flex">
       <div class="logo m-1">
-        <img src="~assets/images/Logo_AlphaBlue.png" alt="">
+        <img src="~assets/images/Logo_AlphaWhite.png" alt="">
       </div>
 
-      <div class="menu lg:hidden flex items-center m-1 pl-8">
-        <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
+      <div class="menu lg:hidden flex items-center m-1 pl-8 text-2xl">
+        <font-awesome-icon icon="bars" />
       </div>
     </div>
   </header>

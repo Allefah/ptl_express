@@ -11,6 +11,12 @@ const colors = {
 
 module.exports = {
   theme: {
+    minWidth: {
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      full: '100%'
+    },
     borderColor: {
       primary: '#FF6600',
       secondary: '#FFB764',
@@ -20,10 +26,9 @@ module.exports = {
       primary: '#204566',
       secondary: '#FFB764',
       secondaryLight: 'rgba(255, 183, 100, 0.5)',
-      greywhite: '#BDBDBDBD',
-      white: '#ffffff',
-      black: '#000000',
-      blackLight: 'rgba(0, 0, 0, 0.65)'
+      white: '#FFFFFF',
+      lightwhite: '#F3F3F3',
+      xblack: 'rgba(0, 0, 0, 0.1)'
     }
   },
   variants: {}
