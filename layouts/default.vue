@@ -19,7 +19,7 @@
             </li>
             <hr class="text-xblack">
             <li class="my-2 mr-3">
-              Nous contacter
+              Devis transport
             </li>
             <hr class="text-xblack">
             <li class="my-2 mr-3">

@@ -23,7 +23,10 @@ module.exports = {
       secondaryLight: 'rgba(255, 183, 100, 0.5)',
       white: '#FFFFFF',
       lightwhite: '#F3F3F3',
-      xblack: 'rgba(0, 0, 0, 0.1)'
+      xblack: 'rgba(0, 0, 0, 0.1)',
+      lightGray: '#aaaaaa',
+      gray: '#65656f',
+      ddd: '#ddd'
     }
   },
   variants: {}
