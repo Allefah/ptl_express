@@ -26,7 +26,8 @@ module.exports = {
       xblack: 'rgba(0, 0, 0, 0.1)',
       lightGray: '#aaaaaa',
       gray: '#65656f',
-      ddd: '#ddd'
+      ddd: '#ddd',
+      ts: '#777'
     }
   },
   variants: {}
