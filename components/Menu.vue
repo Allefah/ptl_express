@@ -89,6 +89,25 @@
         <font-awesome-icon icon="bars" />
       </div>
     </div>
+
+    <div class="hidden lg:block bg-secondary z-100">
+      <div class="container">
+        <ul class="text-l text-white font-semibold uppercase py-6">
+          <li class="my-2 ml-16 mr-16 inline">
+            <a href="#">Qui sommes nous ?</a>
+          </li>
+          <li class="my-2 mr-16 inline">
+            <a href="#">Nos services</a>
+          </li>
+          <li class="my-2 mr-16 inline">
+            <a href="#">Devis transport</a>
+          </li>
+          <li class="my-2 mr-3 inline">
+            <a href="#">Devis transport</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -169,7 +188,7 @@ export default {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 200px 0 0 90px;
+  border-width: 182px 0 0 90px;
   border-top-color: transparent;
   position: absolute;
   top: 0;
