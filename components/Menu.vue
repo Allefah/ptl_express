@@ -57,7 +57,7 @@
         <div class="flex text-primary py-6 px-16">
           <div class="flex p-5">
             <div class="text-xl">
-              <font-awesome-icon id="serviceExposDown" icon="phone-alt" />
+              <font-awesome-icon icon="phone-alt" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
               <h1 class="text-primary text-l font-bold leading-none">(0033) 360 800 070</h1>
@@ -66,7 +66,7 @@
           </div>
           <div class="flex p-4">
             <div class="text-xl">
-              <font-awesome-icon id="serviceExposDown" icon="building" />
+              <font-awesome-icon icon="building" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
               <h1 class="text-primary text-l font-bold leading-none">5 av. Georges Bataille</h1>
@@ -75,7 +75,7 @@
           </div>
           <div class="flex p-4">
             <div class="text-xl">
-              <font-awesome-icon id="serviceExposDown" icon="clock" />
+              <font-awesome-icon icon="clock" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
               <h1 class="text-primary text-l font-bold leading-none">Lu-Ve : 08h00-19h00</h1>

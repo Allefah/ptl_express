@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div id="services" class="py-16 px-6 ">
+    <div id="services" class="py-1 px-6 ">
       <h1 class="text-center uppercase font-black text-2xl text-secondary pb-12">
         Nos services
       </h1>
