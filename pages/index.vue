@@ -1,12 +1,14 @@
 <template>
-  <div class="-mt-6 z-20">
-    <vue-horizontal-list class="caroussel" :items="items" :options="options">
+  <div class="">
+    <!-- <vue-horizontal-list class="caroussel" :items="items" :options="options">
       <template v-slot:default="{item}">
         <div class="item">
           <img :src="item.path" alt="">
         </div>
       </template>
-    </vue-horizontal-list>
+    </vue-horizontal-list> -->
+
+    <img src="../assets/images/012362541.png" alt="">
 
     <div id="societe" class="bg-secondary mt-8 py-16 px-6 text-white">
       <div class="container lg:flex">
@@ -142,7 +144,7 @@
       </div>
     </div>
 
-    <footer class="bg-secondary mt-3 py-16 px-6">
+    <footer id="#footer" class="bg-secondary mt-3 py-16 px-6">
       <div class="container flex flex-col lg:flex-row">
         <div class="mb-6 p-6 flex-1">
           <div class="">

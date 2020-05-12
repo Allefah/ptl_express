@@ -1,6 +1,6 @@
 <template>
-  <header class="site-header p-8 lg:p-0 lg:bg-white bg-primary text-white lg:text-secondary">
-    <div class="container flex">
+  <header class="site-header p-8 lg:p-0 lg:bg-white bg-primary text-white lg:text-secondary  lg:sticky z-10">
+    <div class="top-header container flex">
       <div class="logo relative flex items-center bg-primary z-10">
         <img src="~assets/images/Logo_AlphaWhite.png" alt />
       </div>
@@ -56,29 +56,29 @@
 
         <div class="flex text-primary py-6 px-16">
           <div class="flex p-5">
-            <div class="text-2xl">
+            <div class="text-xl">
               <font-awesome-icon id="serviceExposDown" icon="phone-alt" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
-              <h1 class="text-primary text-xl font-bold leading-none">(0033) 360 800 070</h1>
+              <h1 class="text-primary text-l font-bold leading-none">(0033) 360 800 070</h1>
               <p class="text-ts font-semibold leading-none">transport@ptlexpress.com</p>
             </div>
           </div>
           <div class="flex p-4">
-            <div class="text-2xl">
+            <div class="text-xl">
               <font-awesome-icon id="serviceExposDown" icon="building" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
-              <h1 class="text-primary text-xl font-bold leading-none">5 av. Georges Bataille</h1>
+              <h1 class="text-primary text-l font-bold leading-none">5 av. Georges Bataille</h1>
               <p class="text-ts font-semibold leading-none">60800 Plessis-Belleville, France</p>
             </div>
           </div>
           <div class="flex p-4">
-            <div class="text-2xl">
+            <div class="text-xl">
               <font-awesome-icon id="serviceExposDown" icon="clock" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
-              <h1 class="text-primary text-xl font-bold leading-none">Lu-Ve : 08h00-19h00</h1>
+              <h1 class="text-primary text-l font-bold leading-none">Lu-Ve : 08h00-19h00</h1>
               <p class="text-ts font-semibold leading-none">Ouvert actuellement</p>
             </div>
           </div>
@@ -92,18 +92,18 @@
 
     <div class="hidden lg:block bg-secondary z-100">
       <div class="container">
-        <ul class="text-l text-white font-semibold uppercase py-6">
+        <ul class="text-xs text-white font-semibold uppercase py-4">
           <li class="my-2 ml-16 mr-16 inline">
-            <a href="#">Qui sommes nous ?</a>
+            <a href="#societe">Qui sommes nous ?</a>
           </li>
           <li class="my-2 mr-16 inline">
-            <a href="#">Nos services</a>
+            <a href="#services">Nos services</a>
           </li>
           <li class="my-2 mr-16 inline">
-            <a href="#">Devis transport</a>
+            <a href="#contact">Devis transport</a>
           </li>
           <li class="my-2 mr-3 inline">
-            <a href="#">Devis transport</a>
+            <a href="#footer">Contact</a>
           </li>
         </ul>
       </div>
@@ -145,7 +145,12 @@ export default {
     margin: auto;
   }
 }
-
+.site-header{
+  top: -171px;
+}
+.top-header{
+  height: 170px;
+}
 .before:before {
   content: "";
   position: absolute;
@@ -188,7 +193,7 @@ export default {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 182px 0 0 90px;
+  border-width: 170px 0 0 90px;
   border-top-color: transparent;
   position: absolute;
   top: 0;

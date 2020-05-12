@@ -78,6 +78,8 @@ html, body, #__nuxt, #__layout, #nuxt_default {
 #nuxt_default {
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  overflow-x: hidden;
 }
 *,
 *:before,
