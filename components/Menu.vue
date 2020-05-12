@@ -161,7 +161,6 @@ export default {
   background-color: #ddd;
   z-index: 0;
 }
-
 .lang-selector:before {
   content: "";
   top: -40px;
@@ -177,7 +176,6 @@ export default {
   -ms-transform: skew(30deg, 0);
   -o-transform: skew(30deg, 0);
 }
-
 .logo:before {
   content: "";
   position: absolute;
