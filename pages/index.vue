@@ -144,7 +144,7 @@
       </div>
     </div>
 
-    <footer id="#footer" class="bg-secondary mt-3 py-16 px-6">
+    <footer id="footer" class="bg-secondary mt-3 py-16 px-6">
       <div class="container flex flex-col lg:flex-row">
         <div class="mb-6 p-6 flex-1">
           <div class="">

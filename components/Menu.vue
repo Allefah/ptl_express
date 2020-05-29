@@ -2,22 +2,23 @@
   <header class="site-header p-8 lg:p-0 lg:bg-white bg-primary text-white lg:text-secondary  lg:sticky z-10">
     <div class="top-header container flex">
       <div class="logo relative flex items-center bg-primary z-10">
-        <img src="~assets/images/Logo_AlphaWhite.png" alt />
+        <a href="/"><img src="~assets/images/Logo_AlphaWhite.png"></a>
       </div>
 
       <div class="hidden lg:flex lg:flex-col lg:flex-1 bg-white">
         <div class="before relative" />
         <div class="text-right p-4">
           <div class="relative lang-selector inline-block">
-            <ul>
-              <li class="inline-block px-4">
+            <div class="relative">
+              <div id="lang-selector-fr" class="lang-selector-drap inline-block px-4 cursor-pointer" @click="changeLanguage('fr')">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20">
                   <rect width="30" height="600" fill="#ED2939" />
                   <rect width="20" height="600" fill="#fff" />
                   <rect width="10" height="600" fill="#002395" />
                 </svg>
-              </li>
-              <li class="inline-block px-4">
+              </div>
+
+              <div id="lang-selector-en" class="lang-selector-drap inline-block px-4 cursor-pointer" @click="changeLanguage('en')">
                 <svg
                   width="30"
                   height="20"
@@ -49,8 +50,8 @@
                     />
                   </g>
                 </svg>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -60,8 +61,12 @@
               <font-awesome-icon icon="phone-alt" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
-              <h1 class="text-primary text-l font-bold leading-none">(0033) 360 800 070</h1>
-              <p class="text-ts font-semibold leading-none">transport@ptlexpress.com</p>
+              <h1 class="text-primary text-l font-bold leading-none">
+                (0033) 360 800 070
+              </h1>
+              <p class="text-ts font-semibold leading-none">
+                transport@ptlexpress.com
+              </p>
             </div>
           </div>
           <div class="flex p-4">
@@ -69,8 +74,12 @@
               <font-awesome-icon icon="building" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
-              <h1 class="text-primary text-l font-bold leading-none">5 av. Georges Bataille</h1>
-              <p class="text-ts font-semibold leading-none">60800 Plessis-Belleville, France</p>
+              <h1 class="text-primary text-l font-bold leading-none">
+                5 av. Georges Bataille
+              </h1>
+              <p class="text-ts font-semibold leading-none">
+                60800 Plessis-Belleville, France
+              </p>
             </div>
           </div>
           <div class="flex p-4">
@@ -78,8 +87,12 @@
               <font-awesome-icon icon="clock" />
             </div>
             <div class="whitespace-no-wrap pl-3 flex flex-col">
-              <h1 class="text-primary text-l font-bold leading-none">Lu-Ve : 08h00-19h00</h1>
-              <p class="text-ts font-semibold leading-none">Ouvert actuellement</p>
+              <h1 class="text-primary text-l font-bold leading-none">
+                Lu-Ve : 08h00-19h00
+              </h1>
+              <p class="text-ts font-semibold leading-none">
+                {{ isOpen() }}
+              </p>
             </div>
           </div>
         </div>
@@ -92,18 +105,18 @@
 
     <div class="hidden lg:block bg-secondary z-100">
       <div class="container">
-        <ul class="text-xs text-white font-semibold uppercase py-4">
-          <li class="my-2 ml-16 mr-16 inline">
-            <a href="#societe">Qui sommes nous ?</a>
+        <ul class="menu-hor text-xs text-white font-semibold uppercase py-4">
+          <li id="who" class="my-2 ml-16 mr-16 inline active" @click="goTo('who')">
+            <a href="#societe">{{ $t('menu.who') }}</a>
           </li>
-          <li class="my-2 mr-16 inline">
-            <a href="#services">Nos services</a>
+          <li id="servicesm" class="my-2 mr-16 inline" @click="goTo('servicesm')">
+            <a href="#services">{{ $t('menu.services') }}</a>
           </li>
-          <li class="my-2 mr-16 inline">
-            <a href="#contact">Devis transport</a>
+          <li id="devis" class="my-2 mr-16 inline" @click="goTo('devis')">
+            <a href="#contact">{{ $t('menu.devis') }}</a>
           </li>
-          <li class="my-2 mr-3 inline">
-            <a href="#footer">Contact</a>
+          <li id="contactm" class="my-2 mr-3 inline" @click="goTo('contactm')">
+            <a href="#footer">{{ $t('menu.contact') }}</a>
           </li>
         </ul>
       </div>
@@ -113,26 +126,37 @@
 
 <script>
 export default {
+  mounted () {
+    this.setLangOpacity()
+  },
   methods: {
     changeLanguage (lang) {
-      const currentActiveLangs = document.querySelectorAll(
-        'li.lang-selector.text-primary'
-      )
-      const toActivateLangs = document.querySelectorAll(
-        'li.lang-selector.text-greywhite'
-      )
-
-      currentActiveLangs.forEach((currentActiveLang) => {
-        currentActiveLang.classList.remove('text-primary')
-        currentActiveLang.classList.add('text-greywhite')
-      })
-
-      toActivateLangs.forEach((toActivateLang) => {
-        toActivateLang.classList.remove('text-greywhite')
-        toActivateLang.classList.add('text-primary')
-      })
-
       this.$i18n.locale = lang
+      this.setLangOpacity()
+    },
+    setLangOpacity () {
+      switch (this.$i18n.locale) {
+        case ('fr'):
+          document.querySelector('#lang-selector-en').classList.remove('active')
+          document.querySelector('#lang-selector-fr').classList.add('active')
+          break
+        case ('en'):
+          document.querySelector('#lang-selector-fr').classList.remove('active')
+          document.querySelector('#lang-selector-en').classList.add('active')
+          break
+      }
+    },
+    isOpen () {
+      if (new Date().getHours() < 8 || new Date().getHours() > 19) {
+        return this.$t('dict.close')
+      } else {
+        return this.$t('dict.open')
+      }
+    },
+    goTo (el) {
+      console.log(document.querySelector('.active'))
+      document.querySelector('.menu-hor > .active').classList.remove('active')
+      document.querySelector('#' + el).classList.add('active')
     }
   }
 }
@@ -196,5 +220,42 @@ export default {
   position: absolute;
   top: 0;
   right: -90px;
+}
+
+.menu-hor .active {
+  @apply text-white;
+  @apply font-extrabold;
+  border-bottom: 2px solid white;
+}
+.menu-hor > li {
+    &::after {
+      @apply bg-primary;
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: color('primary');
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+
+    &:hover {
+      color: #95a5a6;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+}
+
+.lang-selector-drap {
+  fill-opacity: 0.5;
+}
+.lang-selector .active {
+  fill-opacity: 1;
 }
 </style>

@@ -2,19 +2,19 @@
   "dict": {
     "ou": "OR",
     "envoyer": "Send",
-    "connexion": "Log in"
+    "connexion": "Log in",
+    "open": "Open currently",
+    "close": "Closed"
   },
   "page": {
     "title": "PTL Express, your logistics partner.",
     "description": "Présentation website of PTL Express's activities."
   },
   "menu": {
-    "accueil": "Home",
-    "ptl": "Ptl express ",
+    "who": "Who we are ?",
     "services": "Our services",
     "contact": "Contact",
-    "apropos": "About",
-    "accees": "Customer login"
+    "devis": "Transport quotation"
   },
   "home": {
     "catchPrahse": "Your Logistics Partner." 
