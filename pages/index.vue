@@ -8,7 +8,13 @@
       </template>
     </vue-horizontal-list> -->
 
-    <img src="../assets/images/012362541.png" alt="">
+    <div class="caroussel relative h-1/2">
+      <div class="logoContainer">
+        <div class="logoAnimate text-center w-1/2">
+          <img src="../assets/images/LogoCompactWhite.png" alt="">
+        </div>
+      </div>
+    </div>
 
     <div id="societe" class="bg-secondary mt-8 py-16 px-6 text-white">
       <div class="container lg:flex">
@@ -20,7 +26,7 @@
           <p><br>Nos atouts:<br>Disponibilité – 24h/24 et 7j/7.<br>Réactivité – Devis immédiat de votre transport.<br>Engagement – Nous nous efforçons de répondre à toutes vos demandes.<br>Qualité – Notre équipe assure le suivi de vos transports et veille au respect des délais de chargement et de livraison.<br>Multilinguisme – Français, anglais, allemand, espagnol, italien.<br></p>
         </div>
         <div class="flex-1 pt-16 lg:pt-0 lg:p-6">
-          <img src="~assets/images/societe.jpg" alt="" width="500">
+          <img src="~assets/images/egb.jpg" alt="" width="500">
         </div>
       </div>
     </div>
@@ -37,14 +43,48 @@
               <font-awesome-icon id="serviceExpressDown" icon="arrow-down" />
               <font-awesome-icon id="serviceExpressRight" icon="arrow-right" class="hidden" />
             </div>
-            <div class="p-4">
+            <div class="p-4 font-bold uppercase">
               Service express
             </div>
           </div>
 
           <transition name="fade">
             <div id="serviceExpress" class="p-4 border border-gray-100">
-              Blala blal balablblbazlbabl...
+              <div class="flex">
+                <div class="flex-1">
+                  <img src="~assets/images/vls.jpg" alt="">
+                </div>
+
+                <div class="flex-1 font-bold text-primary px-4">
+                  Pour tous vos envois urgent en France ou à l'international.<br>
+                  Tout type de conditionement jusqu'à 25 tonnes, tarif adapté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br>
+                  Transit time de 24-48h selon destination.<br>
+
+                  <div class="flex text-center pt-4">
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="stopwatch" size="6x" class="p-2" />24/48h*
+                    </div>
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="truck-loading" size="6x" class="p-2" />De 1kg à 22T
+                    </div>
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="location-arrow" size="6x" class="p-2" />Tracking GPS
+                    </div>
+                  </div>
+
+                  <div class="serviceContact text-center pt-4">
+                    <h1>Devis immédiat :</h1>
+                    <font-awesome-icon icon="envelope" />
+                    <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a><br>
+                    <font-awesome-icon icon="phone-alt" />
+                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-lightGray">
+                * Transit time variable selon destination.
+              </div>
             </div>
           </transition>
         </div>
@@ -196,8 +236,6 @@
 
 <script>
 export default {
-  components: {
-  },
   data () {
     return {
       options: {
@@ -223,6 +261,12 @@ export default {
       ]
     }
   },
+  mounted () {
+    setTimeout(
+      function () {
+        document.querySelector('.logoAnimate').classList.add('animateLogo')
+      }, 1000)
+  },
   methods: {
     show: (elementId) => {
       const el = document.getElementById(elementId)
@@ -246,6 +290,30 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+.caroussel {
+  background-image: url("../assets/images/transport.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.logoContainer {
+  height: 80vh;
+  background: rgba(0,0,0,0.2);
+}
+.logoAnimate {
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 10px;
+  /* display: none; */
+}
+.animateLogo {
+    display: block;
+    width: 500px;
+    transition: 1s ease-in-out;
+}
+
 button {
   width: min-content;
 }
@@ -303,7 +371,7 @@ button {
 }
 
 .caroussel {
-  max-height: 75vh;
+  max-height: 80vh;
   overflow: hidden;
 }
 .caroussel img {

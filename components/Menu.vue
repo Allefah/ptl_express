@@ -228,19 +228,6 @@ export default {
   border-bottom: 2px solid white;
 }
 .menu-hor > li {
-    &::after {
-      @apply bg-primary;
-      position: absolute;
-      content: "";
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: color('primary');
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.5s;
-    }
 
     &:hover {
       color: #95a5a6;
@@ -253,9 +240,9 @@ export default {
 }
 
 .lang-selector-drap {
-  fill-opacity: 0.5;
+  opacity: 0.5;
 }
 .lang-selector .active {
-  fill-opacity: 1;
+  opacity: 1;
 }
 </style>
