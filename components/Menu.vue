@@ -112,8 +112,8 @@
           <li id="servicesm" class="my-2 mr-16 inline" @click="goTo('servicesm')">
             <a href="#services">{{ $t('menu.services') }}</a>
           </li>
-          <li id="devis" class="my-2 mr-16 inline" @click="goTo('devis')">
-            <a href="#contact">{{ $t('menu.devis') }}</a>
+          <li id="devism" class="my-2 mr-16 inline" @click="goTo('devism')">
+            <a href="#devis">{{ $t('menu.devis') }}</a>
           </li>
           <li id="contactm" class="my-2 mr-3 inline" @click="goTo('contactm')">
             <a href="#footer">{{ $t('menu.contact') }}</a>

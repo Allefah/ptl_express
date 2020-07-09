@@ -26,13 +26,13 @@
           <p><br>Nos atouts:<br>Disponibilité – 24h/24 et 7j/7.<br>Réactivité – Devis immédiat de votre transport.<br>Engagement – Nous nous efforçons de répondre à toutes vos demandes.<br>Qualité – Notre équipe assure le suivi de vos transports et veille au respect des délais de chargement et de livraison.<br>Multilinguisme – Français, anglais, allemand, espagnol, italien.<br></p>
         </div>
         <div class="flex-1 pt-16 lg:pt-0 lg:p-6">
-          <img src="~assets/images/egb.jpg" alt="" width="500">
+          <img src="~assets/images/egb2.jpg" alt="" width="500">
         </div>
       </div>
     </div>
 
-    <div id="services" class="py-1 px-6 ">
-      <h1 class="text-center uppercase font-black text-2xl text-secondary pb-12">
+    <div id="services" class="py-6 px-6 ">
+      <h1 class="text-center uppercase font-black text-2xl text-secondary pt-6 pb-12">
         Nos services
       </h1>
 
@@ -56,34 +56,48 @@
                 </div>
 
                 <div class="flex-1 font-bold text-primary px-4">
-                  Pour tous vos envois urgent en France ou à l'international.<br>
-                  Tout type de conditionement jusqu'à 25 tonnes, tarif adapté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br>
-                  Transit time de 24-48h selon destination.<br>
-
-                  <div class="flex text-center pt-4">
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="stopwatch" size="6x" class="p-2" />24/48h*
+                  Pour tous vos envois urgent en France ou à l'international.<br><br>
+                  Tout type de conditionement jusqu'à 25 tonnes, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br>
+                  Transport dédié sans rupture de charges.<br>
+                  Assurance ad valorem possible pour vos envois sensibles.<br>
+                  Demander votre devis immédiat.
+                  <div class="flex text-center pt-6 text-secondary">
+                    <div class="serviceIcon flex items-center flex-1 text-secondary">
+                      <font-awesome-icon icon="stopwatch" size="4x" class="p-2 text-secondary" /><br>24/48h*
                     </div>
                     <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="truck-loading" size="6x" class="p-2" />De 1kg à 22T
+                      <font-awesome-icon icon="truck-loading" size="4x" class="p-2" />Jusqu'à 22T**
                     </div>
                     <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="location-arrow" size="6x" class="p-2" />Tracking GPS
+                      <font-awesome-icon icon="location-arrow" size="4x" class="p-2" />Tracking GPS
                     </div>
-                  </div>
-
-                  <div class="serviceContact text-center pt-4">
-                    <h1>Devis immédiat :</h1>
-                    <font-awesome-icon icon="envelope" />
-                    <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a><br>
-                    <font-awesome-icon icon="phone-alt" />
-                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
                   </div>
                 </div>
               </div>
 
-              <div class="text-lightGray">
-                * Transit time variable selon destination.
+              <div class="flex justify-center">
+                <a href="#devis">
+                  <button class="bg-primary text-white uppercase p-3 my-3">
+                    Demander votre devis
+                  </button>
+                </a>
+              </div>
+
+              <div class=" flex text-lightGray">
+                <div class="flex">
+                  * Transit time variable selon destination.<br>
+                  ** Hors alcools et denrées périsables. Tout conditionement.
+                </div>
+                <div class="flex flex-1 text-right flex-col">
+                  <div>
+                    <font-awesome-icon icon="envelope" />
+                    <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a>
+                  </div>
+                  <div>
+                    <font-awesome-icon icon="phone-alt" />
+                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
+                  </div>
+                </div>
               </div>
             </div>
           </transition>
@@ -95,14 +109,52 @@
               <font-awesome-icon id="serviceExposDown" icon="arrow-down" class="flex" />
               <font-awesome-icon id="serviceExposRight" icon="arrow-right" class="hidden" />
             </div>
-            <div class="p-4">
+            <div class="p-4 font-bold uppercase">
               Service expos
             </div>
           </div>
 
           <transition name="fade">
-            <div id="serviceExpos" class="p-4 border border-gray-100">
-              Blala blal balablblbazlbabl...
+            <div id="serviceExpo" class="p-4 border border-gray-100">
+              <div class="flex flex-row-reverse">
+                <div class="flex-1">
+                  <img src="~assets/images/salon.png" alt="">
+                </div>
+
+                <div class="flex-1 font-bold text-primary px-4">
+                  Notre equipe est là pour vous soutenir pendant toute la durée de votre exposition.<br><br>
+                  Grâce à notre expérience dans la logistique de salon, nous vous proposons de multiples services pour la préparation et la mise en place de votre stand.<br>
+                  Transport de vos marchandises, meubles stand. Montage sur place fabrication sur mesure. Entreposage et stockage. Vous pourrez conmptez sur nous pendant toute la durée de votre évenements.<br><br>
+                  <div class="flex text-center pt-6 text-secondary">
+                    <div class="serviceIcon flex items-center flex-1 text-secondary">
+                      <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 text-secondary" /><br>Sur-mesure
+                    </div>
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="truck-loading" size="4x" class="p-2" />Jusqu'à 22T**
+                    </div>
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="location-arrow" size="4x" class="p-2" />Tracking GPS
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" flex text-lightGray mt-6">
+                <div class="flex">
+                  * Transit time variable selon destination.<br>
+                  ** Hors alcools et denrées périsables. Tout conditionement.
+                </div>
+                <div class="flex flex-1 text-right flex-col">
+                  <div>
+                    <font-awesome-icon icon="envelope" />
+                    <a href="mailto:transport@ptlexpress.com">expo@ptlexpress.com</a>
+                  </div>
+                  <div>
+                    <font-awesome-icon icon="phone-alt" />
+                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </transition>
         </div>
@@ -145,7 +197,7 @@
       </div>
     </div>
 
-    <div id="contact" class="bg-secondary lg:bg-white mt-8 mt-16 px-6 text-white">
+    <div id="devis" class="bg-secondary lg:bg-white mt-8 mt-16 px-6 text-white">
       <div class="container lg:grid lg:grid-cols-2">
         <div class="bg-transparent" />
         <div class="form relative">
@@ -315,7 +367,7 @@ export default {
 }
 
 button {
-  width: min-content;
+  width: max-content;
 }
 .infos {
    grid-template-columns: min-content auto;
@@ -385,7 +437,7 @@ button {
 
 @media screen and (min-width: 500px) {
 
-#contact {
+#devis {
   overflow: hidden;
   background-image: url("http://globalprospect.eu/wp-content/uploads/2015/06/parallax021.jpg");
   background-position: center;
