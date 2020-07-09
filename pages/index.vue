@@ -37,8 +37,8 @@
       </h1>
 
       <div class="container">
-        <div class="pb-5">
-          <div class="flex bg-secondary text-white items-center" @click="show('serviceExpress')">
+        <div class="pb-16">
+          <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceExpress')">
             <div class="bg-primary p-5">
               <font-awesome-icon id="serviceExpressDown" icon="arrow-down" />
               <font-awesome-icon id="serviceExpressRight" icon="arrow-right" class="hidden" />
@@ -55,7 +55,7 @@
                   <img src="~assets/images/vls.jpg" alt="">
                 </div>
 
-                <div class="flex-1 font-bold text-primary px-4">
+                <div class="flex-1 text-primary px-4">
                   Pour tous vos envois urgent en France ou à l'international.<br><br>
                   Tout type de conditionement jusqu'à 25 tonnes, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br>
                   Transport dédié sans rupture de charges.<br>
@@ -103,8 +103,8 @@
           </transition>
         </div>
 
-        <div class="pb-5">
-          <div class="flex bg-secondary text-white items-center" @click="show('serviceExpos')">
+        <div class="pb-16">
+          <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceExpos')">
             <div class="bg-primary p-5">
               <font-awesome-icon id="serviceExposDown" icon="arrow-down" class="flex" />
               <font-awesome-icon id="serviceExposRight" icon="arrow-right" class="hidden" />
@@ -115,34 +115,34 @@
           </div>
 
           <transition name="fade">
-            <div id="serviceExpo" class="p-4 border border-gray-100">
+            <div id="serviceExpos" class="p-4 border border-gray-100">
               <div class="flex flex-row-reverse">
                 <div class="flex-1">
                   <img src="~assets/images/salon.png" alt="">
                 </div>
 
-                <div class="flex-1 font-bold text-primary px-4">
+                <div class="flex-1 text-primary px-4">
                   Notre equipe est là pour vous soutenir pendant toute la durée de votre exposition.<br><br>
-                  Grâce à notre expérience dans la logistique de salon, nous vous proposons de multiples services pour la préparation et la mise en place de votre stand.<br>
-                  Transport de vos marchandises, meubles stand. Montage sur place fabrication sur mesure. Entreposage et stockage. Vous pourrez conmptez sur nous pendant toute la durée de votre évenements.<br><br>
+                  Grâce à notre expérience dans la logistique de salon, nous vous proposons de multiples services pour la préparation et la mise en place de votre stand.<br><br>
+                  Transport de vos marchandises, meubles stand. Montage sur place fabrication sur mesure. Entreposage et stockage.<br>
+                  Vous pourrez conmptez sur nous pendant toute la durée de votre évenements.<br><br>
                   <div class="flex text-center pt-6 text-secondary">
                     <div class="serviceIcon flex items-center flex-1 text-secondary">
                       <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 text-secondary" /><br>Sur-mesure
                     </div>
                     <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="truck-loading" size="4x" class="p-2" />Jusqu'à 22T**
+                      <font-awesome-icon icon="handshake" size="4x" class="p-2" />Service client dédié
                     </div>
                     <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="location-arrow" size="4x" class="p-2" />Tracking GPS
+                      <font-awesome-icon icon="toilet-paper-slash" size="4x" class="p-2" />repond meme au toilet
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class=" flex text-lightGray mt-6">
+              <div class=" flex mt-6">
                 <div class="flex">
-                  * Transit time variable selon destination.<br>
-                  ** Hors alcools et denrées périsables. Tout conditionement.
+                  <a href="#contact">Contactez-nous </a> pour un devis personalisé.
                 </div>
                 <div class="flex flex-1 text-right flex-col">
                   <div>
@@ -159,38 +159,57 @@
           </transition>
         </div>
 
-        <div class="pb-5">
-          <div class="flex bg-secondary text-white items-center" @click="show('servicePalette')">
+        <div class="pb-8">
+          <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceSpecial')">
             <div class="bg-primary p-5">
-              <font-awesome-icon id="servicePaletteDown" icon="arrow-down" />
-              <font-awesome-icon id="servicePaletteRight" icon="arrow-right" class="hidden" />
+              <font-awesome-icon id="serviceSpecialDown" icon="arrow-down" class="flex" />
+              <font-awesome-icon id="serviceSpecialRight" icon="arrow-right" class="hidden" />
             </div>
-            <div class="p-4">
-              Service palettes
+            <div class="p-4 font-bold uppercase">
+              Special service
             </div>
           </div>
 
           <transition name="fade">
-            <div id="servicePalette" class="p-4 border border-gray-100">
-              Blala blal balablblbazlbabl...
-            </div>
-          </transition>
-        </div>
+            <div id="serviceSpecial" class="p-4 border border-gray-100">
+              <div class="flex flex-row">
+                <div class="flex-1">
+                  <img src="~assets/images/heavy.jpg" alt="">
+                </div>
 
-        <div>
-          <div class="flex bg-secondary text-white items-center" @click="show('serviceLogistique')">
-            <div class="bg-primary p-5">
-              <font-awesome-icon id="serviceLogistiqueDown" icon="arrow-down" />
-              <font-awesome-icon id="serviceLogistiqueRight" icon="arrow-right" class="hidden" />
-            </div>
-            <div class="p-4">
-              Service exploitation
-            </div>
-          </div>
+                <div class="flex-1 text-primary px-4">
+                  Transport de charges lourdes, de produits délicats. Déménagements..<br><br>
+                  Spécial service est le service qu'il vous faut. Tranport avec contrainte de rendez-vous, de charges lourdes, avec manutentions lourdes, ou tout ce qui sort de l'ordinaire.<br><br>
+                  Contactez-nous.<br><br>
+                  <div class="flex text-center pt-6 text-secondary">
+                    <div class="serviceIcon flex items-center flex-1 text-secondary">
+                      <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges lourdes
+                    </div>
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="glass-martini" size="4x" class="p-2" />Tranposrt délicat
+                    </div>
+                    <div class="serviceIcon flex items-center flex-1">
+                      <font-awesome-icon icon="people-carry" size="4x" class="p-2" />Manutention.
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <transition name="fade">
-            <div id="serviceLogistique" class="p-4 border border-gray-100">
-              Blala blal balablblbazlbabl...
+              <div class=" flex mt-6">
+                <div class="flex">
+                  <a href="#contact">Contactez-nous </a> pour un devis personalisé.
+                </div>
+                <div class="flex flex-1 text-right flex-col">
+                  <div>
+                    <font-awesome-icon icon="envelope" />
+                    <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a>
+                  </div>
+                  <div>
+                    <font-awesome-icon icon="phone-alt" />
+                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </transition>
         </div>
@@ -433,6 +452,10 @@ button {
 .vhl-navigation {
   padding-left: 150px;
   padding-right: 150px;
+}
+
+.serviceHeader {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 500px) {
