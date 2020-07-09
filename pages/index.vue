@@ -11,7 +11,10 @@
     <div class="caroussel relative h-1/2">
       <div class="logoContainer">
         <div class="logoAnimate text-center w-1/2">
-          <img src="../assets/images/LogoCompactWhite.png" alt="">
+          <img src="../assets/images/Group2.png" alt="">
+        </div>
+        <div class="flex justify-center">
+          <a href="#services"><button class="bg-primary p-4 text-white uppercase font-bold">Decouvrez nos services</button></a>
         </div>
       </div>
     </div>
