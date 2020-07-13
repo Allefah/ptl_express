@@ -450,7 +450,6 @@ button {
 }
 .caroussel img {
   object-fit: cover;
-  height: 100%;
 }
 .vhl-navigation {
   padding-left: 150px;
