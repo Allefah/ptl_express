@@ -58,7 +58,7 @@
                   <img src="~assets/images/vls.jpg" alt="">
                 </div>
 
-                <div class="flex-1 text-primary px-4">
+                <div class="flex-1 text-primary font-semibold px-4">
                   Pour tous vos envois urgent en France ou à l'international.<br><br>
                   Tout type de conditionement jusqu'à 25 tonnes, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br>
                   Transport dédié sans rupture de charges.<br>
@@ -78,7 +78,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-center">
+              <div class="flex justify-end">
                 <a href="#devis">
                   <button class="bg-primary text-white uppercase p-3 my-3">
                     Demander votre devis
@@ -145,9 +145,13 @@
 
               <div class=" flex mt-6">
                 <div class="flex">
-                  <a href="#contact">Contactez-nous </a> pour un devis personalisé.
+                  <a href="mailto:expos@ptlexpress.com?subject=Demande%20devis%20expos%20service">
+                    <button class="bg-primary text-white uppercase p-3 my-3">
+                      Devis personalisé
+                    </button>
+                  </a>
                 </div>
-                <div class="flex flex-1 text-right flex-col">
+                <div class="flex flex-1 text-right flex-col text-lightGray">
                   <div>
                     <font-awesome-icon icon="envelope" />
                     <a href="mailto:transport@ptlexpress.com">expo@ptlexpress.com</a>
@@ -189,7 +193,7 @@
                       <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges lourdes
                     </div>
                     <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="glass-martini" size="4x" class="p-2" />Tranposrt délicat
+                      <font-awesome-icon icon="glass-martini" size="4x" class="p-2" />Transport délicat
                     </div>
                     <div class="serviceIcon flex items-center flex-1">
                       <font-awesome-icon icon="people-carry" size="4x" class="p-2" />Manutention.
@@ -200,7 +204,11 @@
 
               <div class=" flex mt-6">
                 <div class="flex">
-                  <a href="#contact">Contactez-nous </a> pour un devis personalisé.
+                  <a href="mailto:expos@ptlexpress.com?subject=Demande%20devis%20expos%20service">
+                    <button class="bg-primary text-white uppercase p-3 my-3">
+                      Devis personalisé
+                    </button>
+                  </a>
                 </div>
                 <div class="flex flex-1 text-right flex-col">
                   <div>
@@ -230,29 +238,34 @@
             Vous avez besoin d'un devis? Nous vous aidons à assurer chaque transport, même le plus exigeant. Nous sommes disponibles 24h/24, 7j/7. Pendant l’ouverture de nos bureaux (8h – 18h), nous garantissons le devis sous 30 minutes.
           </p>
           <div class="flex flex-col pt-5">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-3">
-              <input type="text" class="w-full text-white bg-gray border border-ddd my-2 p-3" placeholder="Lieu de chargement">
-              <input type="text" class="w-full text-white bg-gray border border-ddd my-2  p-3" placeholder="Lieu de livraison">
-              <input type="text" class="w-full text-white bg-gray border border-ddd my-2 p-3" placeholder="Description de la marchandise">
-              <input type="text" class="w-full text-white bg-gray border border-ddd my-2 p-3" placeholder="Email">
-            </div>
+            <form id="formcontact" action="https://mailthis.to/contact@ptlexpress.com" method="POST" encType="multipart/form-data">
+              <div class="lg:grid lg:grid-cols-2 lg:gap-3">
+                <input type="text" name="Chargement" class="w-full text-white bg-gray border border-ddd my-2 p-3" placeholder="Lieu de chargement">
+                <input type="text" name="Livraison" class="w-full text-white bg-gray border border-ddd my-2  p-3" placeholder="Lieu de livraison">
+                <input type="text" name="Marchandise" class="w-full text-white bg-gray border border-ddd my-2 p-3" placeholder="Description de la marchandise">
+                <input type="email" name="_replyto" class="w-full text-white bg-gray border border-ddd my-2 p-3" placeholder="Votre email">
+              </div>
 
-            <div class="">
-              <textarea
-                id=""
-                name=""
-                cols="30"
-                rows="5"
-                class="text-white bg-gray border border-ddd my-2 p-3 lg:w-full"
-                placeholder="Informations complémentaire..."
-              />
-            </div>
+              <div class="">
+                <textarea
+                  id=""
+                  name="Informations"
+                  cols="30"
+                  rows="4"
+                  class="text-white bg-gray border border-ddd my-2 p-3 lg:w-full"
+                  placeholder="Informations complémentaire..."
+                />
+              </div>
 
-            <div class="flex justify-center pb-12">
-              <button class="bg-primary uppercase p-3 my-3">
-                Envoyer
-              </button>
-            </div>
+              <div class="flex justify-center pb-12">
+                <input type="hidden" name="_subject" value="Devis site">
+                <input type="hidden" name="_after" value="https://myhomepage.net/">
+                <input type="hidden" name="_honeypot" value="">
+                <button type="submit" form="formcontact" value="Submit" class="bg-primary uppercase p-3 my-3">
+                  Envoyer
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -301,7 +314,7 @@
         </div>
 
         <div class="p-6 flex-1">
-          <img width="640" height="100%" src="https://maps.googleapis.com/maps/api/staticmap?center=Ptl+express+plessis+belleville&zoom=17&scale=false&size=640x600&maptype=roadmap&key=AIzaSyDPwNPGPcWaoJGomJ3LMzlV0XjNJqMFN9U&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C5avenue+georges+bataille+plessis+belleville&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CPtl+express+plessis+belleville" alt="Google Map of Ptl express plessis belleville">
+          <img width="640" height="100%" src="https://maps.googleapis.com/maps/api/staticmap?center=Ptl+express+plessis+belleville&zoom=17&scale=false&size=640x600&maptype=roadmap&key=AIzaSyASRAw2wo36_2sAm2wz4PR8ZycKGJRNIn4&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C5avenue+georges+bataille+plessis+belleville&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CPtl+express+plessis+belleville" alt="Google Map of Ptl express plessis belleville">
         </div>
       </div>
     </footer>
