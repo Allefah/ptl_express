@@ -40,6 +40,11 @@
       </h1>
 
       <div class="container">
+        <!--
+
+            BLOC SERVICE EXPRESS
+
+         -->
         <div class="pb-16">
           <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceExpress')">
             <div class="bg-primary p-5">
@@ -59,31 +64,34 @@
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
-                  Pour tous vos envois urgent en France ou à l'international.<br><br>
-                  Tout type de conditionement jusqu'à 25 tonnes, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br>
-                  Transport dédié sans rupture de charges.<br>
-                  Assurance ad valorem possible pour vos envois sensibles.<br>
+                  Pour tous vos envois <span class="font-bold text-secondary">urgent</span> en France ou à l'International.<br><br>
+                  Tout type de conditionement jusqu'à <span class="text-secondary font-bold">25 tonnes</span>, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br><br>
+                  Transport dédié <span class="text-secondary font-bold">sans rupture de charges</span>.<br>
+                  <span class="font-bold text-secondary">Assurance ad valorem</span> pour vos envois sensibles sur demande.<br><br>
                   Demander votre devis immédiat.
-                  <div class="flex text-center pt-6 text-secondary">
-                    <div class="serviceIcon flex items-center flex-1 text-secondary">
-                      <font-awesome-icon icon="stopwatch" size="4x" class="p-2 text-secondary" /><br>24/48h*
-                    </div>
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="truck-loading" size="4x" class="p-2" />Jusqu'à 22T**
-                    </div>
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="location-arrow" size="4x" class="p-2" />Tracking GPS
-                    </div>
-                  </div>
                 </div>
               </div>
 
-              <div class="flex justify-end">
-                <a href="#devis">
-                  <button class="bg-primary text-white uppercase p-3 my-3">
-                    Demander votre devis
-                  </button>
-                </a>
+              <div class="flex mt-6">
+                <div class="flex flex-1 text-center font-bold text-secondary">
+                  <div class="serviceIcon flex items-center flex text-secondary">
+                    <font-awesome-icon icon="stopwatch" size="4x" class="p-2 text-secondary" /><br>24/48h*
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="truck-loading" size="4x" class="ml-4 p-2" />Jusqu'à 22T**
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="location-arrow" size="4x" class="ml-4 p-2" />Tracking GPS
+                  </div>
+                </div>
+
+                <div class="flex text-right justify-end">
+                  <a href="#devis">
+                    <button class="bg-primary text-white uppercase p-3 my-3">
+                      Demander votre devis
+                    </button>
+                  </a>
+                </div>
               </div>
 
               <div class=" flex text-lightGray">
@@ -98,7 +106,7 @@
                   </div>
                   <div>
                     <font-awesome-icon icon="phone-alt" />
-                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
+                    <a href="phone:+33380700080">+33 3.60.80.00.70</a>
                   </div>
                 </div>
               </div>
@@ -106,6 +114,11 @@
           </transition>
         </div>
 
+        <!--
+
+            BLOC SERVICE EXPO
+
+         -->
         <div class="pb-16">
           <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceExpos')">
             <div class="bg-primary p-5">
@@ -124,41 +137,48 @@
                   <img src="~assets/images/salon.png" alt="">
                 </div>
 
-                <div class="flex-1 text-primary px-4">
+                <div class="flex-1 text-primary font-semibold px-4">
                   Notre equipe est là pour vous soutenir pendant toute la durée de votre exposition.<br><br>
-                  Grâce à notre expérience dans la logistique de salon, nous vous proposons de multiples services pour la préparation et la mise en place de votre stand.<br><br>
-                  Transport de vos marchandises, meubles stand. Montage sur place fabrication sur mesure. Entreposage et stockage.<br>
-                  Vous pourrez conmptez sur nous pendant toute la durée de votre évenements.<br><br>
-                  <div class="flex text-center pt-6 text-secondary">
-                    <div class="serviceIcon flex items-center flex-1 text-secondary">
-                      <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 text-secondary" /><br>Sur-mesure
-                    </div>
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="handshake" size="4x" class="p-2" />Service client dédié
-                    </div>
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="toilet-paper-slash" size="4x" class="p-2" />repond meme au toilet
-                    </div>
-                  </div>
+                  Grâce à notre <span class="font-bold text-secondary">expérience</span> dans la logistique de salon, nous vous proposons nos services pour la préparation et la mise en place de votre stand.<br><br>
+                  <span class="font-bold text-secondary">Transport</span> de vos marchandises, meubles et stand. <span class="text-secondary font-bold">Livraison sur stand.</span><br>
+                  <span class="font-bold text-secondary">Stockage</span> de vos emballages.<br>
+                  <span class="font-bold text-secondary">Montage, démontage</span> de stand, fabrication sur mesure sur demande.<br><br>
+                  Ainsi que de multiples services annexes.<br><br>
+                  Vous pourrez comptez sur une équipe experimenté. Devis personalisé.<br><br>
                 </div>
               </div>
 
-              <div class=" flex mt-6">
-                <div class="flex">
+              <div class="flex mt-6">
+                <div class="flex flex-1">
                   <a href="mailto:expos@ptlexpress.com?subject=Demande%20devis%20expos%20service">
                     <button class="bg-primary text-white uppercase p-3 my-3">
                       Devis personalisé
                     </button>
                   </a>
                 </div>
-                <div class="flex flex-1 text-right flex-col text-lightGray">
+
+                <div class="flex text-secondary font-bold">
+                  <div class="serviceIcon flex items-center flex text-secondary">
+                    <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 mr-2 text-secondary" /><br>Prestation<br>sur mesure
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="handshake" size="4x" class="p-2 ml-4 mr-2" />Service client<br>dédié
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="clock" size="4x" class="p-2 ml-4 mr-2" />Astreinte<br>24h/24h
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="flex flex-1 flex-col text-lightGray">
                   <div>
                     <font-awesome-icon icon="envelope" />
                     <a href="mailto:transport@ptlexpress.com">expo@ptlexpress.com</a>
                   </div>
                   <div>
                     <font-awesome-icon icon="phone-alt" />
-                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
+                    <a href="phone:+33380700080">+33 3.60.80.00.71</a>
                   </div>
                 </div>
               </div>
@@ -166,6 +186,11 @@
           </transition>
         </div>
 
+        <!--
+
+            BLOC SERVICE SPECIAL
+
+         -->
         <div class="pb-8">
           <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceSpecial')">
             <div class="bg-primary p-5">
@@ -184,25 +209,27 @@
                   <img src="~assets/images/heavy.jpg" alt="">
                 </div>
 
-                <div class="flex-1 text-primary px-4">
-                  Transport de charges lourdes, de produits délicats. Déménagements..<br><br>
-                  Spécial service est le service qu'il vous faut. Tranport avec contrainte de rendez-vous, de charges lourdes, avec manutentions lourdes, ou tout ce qui sort de l'ordinaire.<br><br>
+                <div class="flex-1 text-primary font-semibold px-4">
+                  Vuus êtes embetez avec un transport qui sors de l'ordinaire. Nous avons la <span class="font-bold text-secondary">solution</span>.<br><br>
+                  Transport de charges lourdes, de produits délicats. Rendez-vous de livraison, livraison dans centre commerciaux, manutention, accèes difficile.<br><br>
+                  Transport avec contrainte de rendez-vous, de charges lourdes, avec manutention lourdes, ou tout ce qui sort de l'ordinaire.<br><br>
                   Contactez-nous.<br><br>
-                  <div class="flex text-center pt-6 text-secondary">
-                    <div class="serviceIcon flex items-center flex-1 text-secondary">
-                      <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges lourdes
-                    </div>
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="glass-martini" size="4x" class="p-2" />Transport délicat
-                    </div>
-                    <div class="serviceIcon flex items-center flex-1">
-                      <font-awesome-icon icon="people-carry" size="4x" class="p-2" />Manutention.
-                    </div>
-                  </div>
                 </div>
               </div>
 
-              <div class=" flex mt-6">
+              <div class="flex mt-6">
+                <div class="flex flex-1 text-center text-secondary font-bold">
+                  <div class="serviceIcon flex items-center flex text-secondary">
+                    <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges lourdes
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="glass-martini" size="4x" class="ml-4 p-2" />Transport délicat
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="people-carry" size="4x" class="ml-4 p-2" />Manutention
+                  </div>
+                </div>
+
                 <div class="flex">
                   <a href="mailto:expos@ptlexpress.com?subject=Demande%20devis%20expos%20service">
                     <button class="bg-primary text-white uppercase p-3 my-3">
@@ -210,17 +237,19 @@
                     </button>
                   </a>
                 </div>
-                <div class="flex flex-1 text-right flex-col">
-                  <div>
-                    <font-awesome-icon icon="envelope" />
-                    <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a>
-                  </div>
-                  <div>
-                    <font-awesome-icon icon="phone-alt" />
-                    <a href="phone:+33380700080">+33 3.95.00.70.80</a>
-                  </div>
+              </div>
+
+              <div class="flex flex-1 text-right text-lightGray flex-col">
+                <div>
+                  <font-awesome-icon icon="envelope" />
+                  <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a>
+                </div>
+                <div>
+                  <font-awesome-icon icon="phone-alt" />
+                  <a href="phone:+33380700080">+33 3.95.00.70.80</a>
                 </div>
               </div>
+
             </div>
           </transition>
         </div>

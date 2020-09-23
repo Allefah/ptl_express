@@ -15,7 +15,6 @@ import {
   faLocationArrow,
   faRulerCombined,
   faHandshake,
-  faToiletPaperSlash,
   faWeightHanging,
   faGlassMartini,
   faPeopleCarry
@@ -37,7 +36,6 @@ library.add(faUserSecret,
   faLocationArrow,
   faRulerCombined,
   faHandshake,
-  faToiletPaperSlash,
   faWeightHanging,
   faGlassMartini,
   faPeopleCarry
