@@ -273,7 +273,7 @@
             <div id="serviceDem" class="p-4 border border-gray-100">
               <div class="flex flex-row-reverse">
                 <div class="flex-1">
-                  <img src="~assets/images/salon.png" alt="">
+                  <img src="~assets/images/dem.webp" alt="">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
