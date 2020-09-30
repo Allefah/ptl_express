@@ -316,7 +316,7 @@
                   </div>
                   <div>
                     <font-awesome-icon icon="phone-alt" />
-                    <a href="phone:+33380700080">+33 3.60.80.00.71</a>
+                    <a href="phone:+33380700080">+33 3.60.80.00.70</a>
                   </div>
                 </div>
               </div>
