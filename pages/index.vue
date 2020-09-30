@@ -358,7 +358,7 @@
 
               <div class="flex justify-center pb-12">
                 <input type="hidden" name="_subject" value="Devis site">
-                <input type="hidden" name="_after" value="https://ptlexpress.netlify.com">
+                <input type="hidden" name="_after" value="https://ptlexpress.com">
                 <input type="hidden" name="_honeypot" value="">
                 <button type="submit" form="formcontact" value="Submit" class="bg-primary uppercase p-3 my-3">
                   Envoyer
