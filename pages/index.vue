@@ -358,7 +358,7 @@
 
               <div class="flex justify-center pb-12">
                 <input type="hidden" name="_subject" value="Devis site">
-                <input type="hidden" name="_after" value="https://myhomepage.net/">
+                <input type="hidden" name="_after" value="https://ptlexpress.netlify.com">
                 <input type="hidden" name="_honeypot" value="">
                 <button type="submit" form="formcontact" value="Submit" class="bg-primary uppercase p-3 my-3">
                   Envoyer
@@ -478,7 +478,7 @@ export default {
 */
 
 .caroussel {
-  background-image: url("../assets/images/transport_optimized.jpg");
+  background-image: url("../assets/images/transport_1920.png");
   background-position: center;
   background-size: cover;
 }
