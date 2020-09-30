@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="flex text-right justify-end">
-                  <a href="#devis">
+                  <a href="mailto:transport@ptlexpress.com?subject=Demande%20devis%20transport">
                     <button class="bg-primary text-white uppercase p-3 my-3">
                       Demander votre devis
                     </button>
@@ -174,7 +174,7 @@
                 <div class="flex flex-1 flex-col text-lightGray">
                   <div>
                     <font-awesome-icon icon="envelope" />
-                    <a href="mailto:transport@ptlexpress.com">expo@ptlexpress.com</a>
+                    <a href="mailto:expo@ptlexpress.com">expo@ptlexpress.com</a>
                   </div>
                   <div>
                     <font-awesome-icon icon="phone-alt" />
@@ -191,7 +191,7 @@
             BLOC SERVICE SPECIAL
 
          -->
-        <div class="pb-8">
+        <div class="pb-16">
           <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceSpecial')">
             <div class="bg-primary p-5">
               <font-awesome-icon id="serviceSpecialDown" icon="arrow-down" class="flex" />
@@ -220,7 +220,7 @@
               <div class="flex mt-6">
                 <div class="flex flex-1 text-center text-secondary font-bold">
                   <div class="serviceIcon flex items-center flex text-secondary">
-                    <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges lourdes
+                    <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges<br>lourdes
                   </div>
                   <div class="serviceIcon flex items-center flex">
                     <font-awesome-icon icon="glass-martini" size="4x" class="ml-4 p-2" />Transport délicat
@@ -231,7 +231,7 @@
                 </div>
 
                 <div class="flex">
-                  <a href="mailto:expos@ptlexpress.com?subject=Demande%20devis%20expos%20service">
+                  <a href="mailto:transport@ptlexpress.com?subject=Demande%20devis%special%20service">
                     <button class="bg-primary text-white uppercase p-3 my-3">
                       Devis personalisé
                     </button>
@@ -249,7 +249,77 @@
                   <a href="phone:+33380700080">+33 3.95.00.70.80</a>
                 </div>
               </div>
+            </div>
+          </transition>
+        </div>
 
+        <!--
+
+            BLOC SERVICE DEM
+
+         -->
+        <div class="pb-8">
+          <div class="serviceHeader flex bg-secondary text-white items-center" @click="show('serviceDem')">
+            <div class="bg-primary p-5">
+              <font-awesome-icon id="serviceDemDown" icon="arrow-down" class="flex" />
+              <font-awesome-icon id="serviceDemRight" icon="arrow-right" class="hidden" />
+            </div>
+            <div class="p-4 font-bold uppercase">
+              Service demenagement
+            </div>
+          </div>
+
+          <transition name="fade">
+            <div id="serviceDem" class="p-4 border border-gray-100">
+              <div class="flex flex-row-reverse">
+                <div class="flex-1">
+                  <img src="~assets/images/salon.png" alt="">
+                </div>
+
+                <div class="flex-1 text-primary font-semibold px-4">
+                  Au fil des années, nous avons su développer notre expertise du <span class="font-bold text-secondary">déménagement</span>.<br><br>
+
+                  Du simple transport de vos cartons et meubles, à l'emballage, démontage et la protection de vos affaires fragile. Notre vaste gamme de services conviendra à tous les budgets aux exigences les plus pointues.
+                  <br><br>Nous pouvons vous fournir tout le matériel necessaire.<br><br>
+
+                  Devis gratuit suite à une visite préalable.
+                </div>
+              </div>
+
+              <div class="flex mt-6">
+                <div class="flex flex-1">
+                  <a href="mailto:transport@ptlexpress.com?subject=Demande%20devis%20demenagement%20">
+                    <button class="bg-primary text-white uppercase p-3 my-3">
+                      Devis personalisé
+                    </button>
+                  </a>
+                </div>
+
+                <div class="flex text-secondary font-bold">
+                  <div class="serviceIcon flex items-center flex text-secondary">
+                    <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 mr-2 text-secondary" /><br>Prestation<br>sur mesure
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="handshake" size="4x" class="p-2 ml-4 mr-2" />Service client<br>dédié
+                  </div>
+                  <div class="serviceIcon flex items-center flex">
+                    <font-awesome-icon icon="clock" size="4x" class="p-2 ml-4 mr-2" />Astreinte<br>24h/24h
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="flex flex-1 flex-col text-lightGray">
+                  <div>
+                    <font-awesome-icon icon="envelope" />
+                    <a href="mailto:transport@ptlexpress.com">transport@ptlexpress.com</a>
+                  </div>
+                  <div>
+                    <font-awesome-icon icon="phone-alt" />
+                    <a href="phone:+33380700080">+33 3.60.80.00.71</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </transition>
         </div>
@@ -408,7 +478,7 @@ export default {
 */
 
 .caroussel {
-  background-image: url("../assets/images/transport.jpg");
+  background-image: url("../assets/images/transport_optimized.jpg");
   background-position: center;
   background-size: cover;
 }
