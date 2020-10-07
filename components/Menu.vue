@@ -64,7 +64,7 @@
               <h1 class="text-primary text-l font-bold leading-none">
                 (0033) 360 800 070
               </h1>
-              <p class="text-ts font-semibold leading-none">
+              <p class="text-ts font-bold leading-none">
                 transport@ptlexpress.com
               </p>
             </div>
