@@ -399,7 +399,7 @@
             </div>
             <div><font-awesome-icon icon="phone-alt" /></div>
             <div class="pl-5">
-              06 38 95 85 10
+              03 60 80 00 70
             </div>
             <div><font-awesome-icon icon="envelope" /></div>
             <div class="pl-5">
