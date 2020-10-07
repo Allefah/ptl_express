@@ -478,7 +478,7 @@ export default {
 */
 
 .caroussel {
-  background-image: url("../assets/images/transport_1920.png");
+  background-image: url("../assets/images/transport_wp.webp");
   background-position: center;
   background-size: cover;
 }
