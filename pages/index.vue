@@ -29,7 +29,7 @@
           <p><br>Nos atouts:<br>Disponibilité – 24h/24 et 7j/7.<br>Réactivité – Devis immédiat de votre transport.<br>Engagement – Nous nous efforçons de répondre à toutes vos demandes.<br>Qualité – Notre équipe assure le suivi de vos transports et veille au respect des délais de chargement et de livraison.<br>Multilinguisme – Français, anglais, allemand, espagnol, italien.<br></p>
         </div>
         <div class="flex-1 pt-16 lg:pt-0 lg:p-6">
-          <img src="~assets/images/egb2.jpg" alt="" width="500">
+          <img src="~assets/images/egb2.webp" alt="" width="500">
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
             <div id="serviceExpress" class="p-4 border border-gray-100">
               <div class="flex">
                 <div class="flex-1">
-                  <img src="~assets/images/vls.jpg" alt="">
+                  <img src="~assets/images/vls.webp" alt="">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
@@ -134,7 +134,7 @@
             <div id="serviceExpos" class="p-4 border border-gray-100">
               <div class="flex flex-row-reverse">
                 <div class="flex-1">
-                  <img src="~assets/images/salon.png" alt="">
+                  <img src="~assets/images/salon.webp" alt="">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
@@ -206,7 +206,7 @@
             <div id="serviceSpecial" class="p-4 border border-gray-100">
               <div class="flex flex-row">
                 <div class="flex-1">
-                  <img src="~assets/images/heavy.jpg" alt="">
+                  <img src="~assets/images/heavy.webp" alt="">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
@@ -424,27 +424,6 @@
 export default {
   data () {
     return {
-      options: {
-        item: {
-          class: 'p-0 pt-0',
-          padding: 12
-        },
-        responsive: [
-          { start: 1, size: 1 }
-        ],
-        list: {
-          windowed: 200
-        }
-      },
-      navigation: {
-        start: 200,
-        color: '#F3F3F3'
-      },
-      items: [
-        { path: require('../assets/images/012362541.png') },
-        { path: require('../assets/images/01251619.jpg') },
-        { path: require('../assets/images/1647763.jpg') }
-      ]
     }
   },
   mounted () {
