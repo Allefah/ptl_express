@@ -14,7 +14,7 @@
           <img src="../assets/images/Group2.png" alt="Logo de PTL Express">
         </div>
         <div class="flex justify-center">
-          <a href="#services"><button class="bg-primary p-4 text-white uppercase font-bold">Decouvrez nos services</button></a>
+          <a href="#services"><button class="bg-primary p-4 text-white uppercase font-bold">{{ $t('home.learnOurServices')}}</button></a>
         </div>
       </div>
     </div>
@@ -25,8 +25,8 @@
           <h1 class="pb-3 text-xl font-bold">
             PTL EXPRESS
           </h1>
-          <p>Nous sommes une jeune société de transport et d'affrètement en plein développement. Nous nous spécialisons dans le transport express de petit volume dans toute l'Europe. Nous sommes devenus en peu de temps une société polonaise dominante sur le marché français. Notre équipe est jeune, dynamique et qualifiée, prête à relever chaque défi.</p>
-          <p><br>Nos atouts:<br>Disponibilité – 24h/24 et 7j/7.<br>Réactivité – Devis immédiat de votre transport.<br>Engagement – Nous nous efforçons de répondre à toutes vos demandes.<br>Qualité – Notre équipe assure le suivi de vos transports et veille au respect des délais de chargement et de livraison.<br>Multilinguisme – Français, anglais, allemand, espagnol, italien.<br></p>
+          <p>{{ $t('societe.pitch-p1') }}</p><br>
+          <p v-html="$t('societe.pitch-p2')"></p>
         </div>
         <div class="flex-1 pt-16 lg:pt-0 lg:p-6">
           <img src="~assets/images/egb-500x333.webp" alt="Centre d'affaire EGB" width="500">
@@ -36,7 +36,7 @@
 
     <div id="services" class="py-6 px-6 ">
       <h1 class="text-center uppercase font-black text-2xl text-secondary pt-6 pb-12">
-        Nos services
+        {{ $t('dict.ourservices')}}
       </h1>
 
       <div class="container">
@@ -52,7 +52,7 @@
               <font-awesome-icon id="serviceExpressRight" icon="arrow-right" class="hidden" />
             </div>
             <div class="p-4 font-bold uppercase">
-              Service express
+              {{ $t('service.express') }}
             </div>
           </div>
 
@@ -63,7 +63,7 @@
                   <img src="~assets/images/vls-527x265.webp" alt="Camions en épi">
                 </div>
 
-                <div class="flex-1 text-primary font-semibold px-4">
+                <div class="flex-1 text-primary font-semibold px-4" v-html="$t('service.express-p1')">
                   Pour tous vos envois <span class="font-bold text-secondary">urgent</span> en France ou à l'International.<br><br>
                   Tout type de conditionement jusqu'à <span class="text-secondary font-bold">25 tonnes</span>, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br><br>
                   Transport dédié <span class="text-secondary font-bold">sans rupture de charges</span>.<br>
@@ -75,10 +75,10 @@
               <div class="flex mt-6">
                 <div class="flex flex-1 text-center font-bold text-secondary">
                   <div class="serviceIcon flex items-center flex text-secondary">
-                    <font-awesome-icon icon="stopwatch" size="4x" class="p-2 text-secondary" /><br>24/48h*
+                    <font-awesome-icon icon="stopwatch" size="4x" class="p-2 text-secondary" />24/48h*
                   </div>
                   <div class="serviceIcon flex items-center flex">
-                    <font-awesome-icon icon="truck-loading" size="4x" class="ml-4 p-2" />Jusqu'à 22T**
+                    <font-awesome-icon icon="truck-loading" size="4x" class="ml-4 p-2" />{{ $t('dict.upTo')}} 22T**
                   </div>
                   <div class="serviceIcon flex items-center flex">
                     <font-awesome-icon icon="location-arrow" size="4x" class="ml-4 p-2" />Tracking GPS
@@ -88,7 +88,7 @@
                 <div class="flex text-right justify-end">
                   <a href="mailto:transport@ptlexpress.com?subject=Demande%20devis%20transport">
                     <button class="bg-primary text-white uppercase p-3 my-3">
-                      Demander votre devis
+                      {{ $t('dict.askQuote') }}
                     </button>
                   </a>
                 </div>
@@ -96,8 +96,8 @@
 
               <div class=" flex text-lightGray">
                 <div class="flex">
-                  * Transit time variable selon destination.<br>
-                  ** Hors alcools et denrées périsables. Tout conditionement.
+                  * {{ $t('service.express-e1') }}<br>
+                  ** {{ $t('service.express-e2') }}
                 </div>
                 <div class="flex flex-1 text-right flex-col">
                   <div>
@@ -159,7 +159,7 @@
 
                 <div class="flex text-secondary font-bold">
                   <div class="serviceIcon flex items-center flex text-secondary">
-                    <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 mr-2 text-secondary" /><br>Prestation<br>sur mesure
+                    <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 mr-2 text-secondary" />Prestation<br>sur mesure
                   </div>
                   <div class="serviceIcon flex items-center flex">
                     <font-awesome-icon icon="handshake" size="4x" class="p-2 ml-4 mr-2" />Service client<br>dédié
@@ -220,7 +220,7 @@
               <div class="flex mt-6">
                 <div class="flex flex-1 text-center text-secondary font-bold">
                   <div class="serviceIcon flex items-center flex text-secondary">
-                    <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" /><br>Charges<br>lourdes
+                    <font-awesome-icon icon="weight-hanging" size="4x" class="p-2 text-secondary" />Charges<br>lourdes
                   </div>
                   <div class="serviceIcon flex items-center flex">
                     <font-awesome-icon icon="glass-martini" size="4x" class="ml-4 p-2" />Transport délicat
@@ -297,7 +297,7 @@
 
                 <div class="flex text-secondary font-bold">
                   <div class="serviceIcon flex items-center flex text-secondary">
-                    <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 mr-2 text-secondary" /><br>Prestation<br>sur mesure
+                    <font-awesome-icon icon="ruler-combined" size="4x" class="p-2 mr-2 text-secondary" />Prestation<br>sur mesure
                   </div>
                   <div class="serviceIcon flex items-center flex">
                     <font-awesome-icon icon="handshake" size="4x" class="p-2 ml-4 mr-2" />Service client<br>dédié

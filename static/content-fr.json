@@ -4,7 +4,10 @@
     "envoyer": "Envoyer",
     "connexion": "Se connecter",
     "open": "Ouvert actuellement",
-    "close": "Fermé"
+    "close": "Fermé",
+    "ourservices": "Nos services",
+    "askQuote": "Demandez votre devis",
+    "upTo": "Jusqu'a"
   },
   "page": {
     "title": "PTL Express, votre partenaire logistique.",
@@ -17,20 +20,18 @@
     "devis": "Devis Transport"
   },
   "home": {
-    "catchPrahse": "Votre partenaire logistique." 
+    "catchPrahse": "Votre partenaire logistique.", 
+    "learnOurServices": "Decouvrez nos services"
   },
   "societe" : {
-    "pitch": "Basé près de Roissy, PTL Express est un société à taille humaine mêlant souplesse et efficacité.<br><br>Historiquement spécialisé dans le transport express à travers toute l'Europe, nous avons su développer d'autres domaines d'expertise. Que ce soit dans l'evenementiel ou la logistique, nous apportons toujours notre vision et notre rapport client qui fait la difference.<br><br>Depuis la création par son président actuelle, PTL Express s'efforce de rendre la relation client fournisseur le plus ... possible. Quel que soit votre besoins, nos équipe se deméne pour y répondre  de la meilleure des maniéres.<br>",
-    "hero1": "Efficacité",
-    "hero2": "flexibilité",
-    "hero3": "polyvalence",
-    "hero4": "humain"
+    "pitch-p1": "Nous sommes une jeune société de transport et d'affrètement en plein développement. Nous nous spécialisons dans le transport express de petit volume dans toute l'Europe. Notre équipe est jeune, dynamique et qualifiée, prête à relever chaque défi.",
+    "pitch-p2": "Nos atouts:<br>Disponibilité – 24h/24 et 7j/7.<br>Réactivité – Devis immédiat de votre transport.<br>Engagement – Nous nous efforçons de répondre à toutes vos demandes.<br>Qualité – Notre équipe assure le suivi de vos transports et veille au respect des délais de chargement et de livraison.<br>Multilinguisme – Français, anglais, allemand, espagnol, italien."
   },
   "service" : {
-    "s1": "Service express",
-    "s2": "Service palette",
-    "s3": "Service logistique",
-    "s4": "Service salon"
+    "express": "SERVICE EXPRESS",
+    "express-p1": "Pour tous vos envois <span class='font-bold text-secondary'>urgent</span> en France ou à l'International.<br><br>Tout type de conditionement jusqu'à <span class='text-secondary font-bold'>22 tonnes</span>, tarif ajusté grâce à un flotte complètes qui permet de s'adapter a la nature de la marchandise.<br><br>Transport dédié <span class='text-secondary font-bold'>sans rupture de charges</span>.<br><span class='font-bold text-secondary'>Assurance ad valorem</span> pour vos envois sensibles sur demande.<br><br>Demander votre devis immédiat.",
+    "express-e1": "Transit time variable selon destination.",
+    "express-e2": "Hors alcools et denrées périsables. Tout conditionement."
   },
   "contact": {
     "titre1": "Nous",

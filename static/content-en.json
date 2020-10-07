@@ -2,9 +2,11 @@
   "dict": {
     "ou": "OR",
     "envoyer": "Send",
-    "connexion": "Log in",
     "open": "Open currently",
-    "close": "Closed"
+    "close": "Closed",
+    "ourservices": "Our services",
+    "askQuote": "Request your quote",
+    "upTo": "Up to"
   },
   "page": {
     "title": "PTL Express, your logistics partner.",
@@ -17,20 +19,18 @@
     "devis": "Transport quotation"
   },
   "home": {
-    "catchPrahse": "Your Logistics Partner." 
+    "catchPrahse": "Your Logistics Partner.", 
+    "learnOurServices": "Learn more"
   },
   "societe" : {
-    "pitch": "Amazinz<br> Believe us we are here for you !",
-    "hero1": "Strengthness",
-    "hero2": "Smoothness",
-    "hero3": "Believenes",
-    "hero4": "Fastinesly"
+    "pitch-p1": "We are a young, rapidly developing transport and charter company. We specialize in small volume express transport throughout Europe. Our team is young, dynamic and qualified, ready to take up any challenge.",
+    "pitch-p2": "Our strengths:<br>Availability - 24 hours a day, 7 days a week.<br>Responsiveness - Immediate quote for your transport.<br>Commitment - We strive to meet all your requests.<br>Quality - Our team monitors your transport and ensures that loading and delivery deadlines are met.<br>Multilingualism - French, English, German, Spanish, Italian."
   },
   "service" : {
-    "s1": "Express shipping",
-    "s2": "Palets service",
-    "s3": "Logistics",
-    "s4": "Fairs & Shows"
+    "express": "Express service",
+    "express-p1": "For all your <span class='font-bold text-secondary'>urgent</span> shipments in France or internationally.<br><br>Any type of packaging up to <span class='font-bold text-secondary'>22 tons</span>, price adjusted thanks to a complete fleet which allows to adapt to the nature of the goods.<br><br>Dedicated transport <span class='font-bold text-secondary'>without breaking loads</span>.<br><span class='font-bold text-secondary'>Ad valorem insurance</span> for your sensitive shipments on request.<br><br>Request your immediate quote.",
+    "express-e1": "Transit time variable depending on destination.",
+    "express-e2": "Excluding alcohol and perishable food. All conditioning."
   },
   "contact": {
     "titre1": "Contact",
@@ -42,8 +42,5 @@
     "modeFormulaire": "Contact form",
     "horaireTel": "Monday to Wednesday 8h-19h",
     "adresse": "5 avenue Georges Bataille<br>60330 Le Plessis Belleville<br>France"
-   },
-   "apropos": {
-     "titre": "About"
    }
 }
