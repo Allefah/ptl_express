@@ -2,7 +2,7 @@
   <header class="site-header p-8 lg:p-0 lg:bg-white bg-primary text-white lg:text-secondary  lg:sticky z-10">
     <div class="top-header container flex">
       <div class="logo relative flex items-center bg-primary z-10">
-        <a href="/"><img src="~assets/images/Logo_AlphaWhite.png"></a>
+        <a href="/"><img src="~assets/images/Logo_AlphaWhite.png" alt="Logo de PTL Express"></a>
       </div>
 
       <div class="hidden lg:flex lg:flex-col lg:flex-1 bg-white">
