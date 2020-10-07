@@ -29,7 +29,7 @@
           <p><br>Nos atouts:<br>Disponibilité – 24h/24 et 7j/7.<br>Réactivité – Devis immédiat de votre transport.<br>Engagement – Nous nous efforçons de répondre à toutes vos demandes.<br>Qualité – Notre équipe assure le suivi de vos transports et veille au respect des délais de chargement et de livraison.<br>Multilinguisme – Français, anglais, allemand, espagnol, italien.<br></p>
         </div>
         <div class="flex-1 pt-16 lg:pt-0 lg:p-6">
-          <img src="~assets/images/egb2.webp" alt="" width="500">
+          <img src="~assets/images/egb-500x333.webp" alt="Centre d'affaire EGB" width="500">
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
             <div id="serviceExpress" class="p-4 border border-gray-100">
               <div class="flex">
                 <div class="flex-1">
-                  <img src="~assets/images/vls.webp" alt="">
+                  <img src="~assets/images/vls-527x265.webp" alt="Camions en épi">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
@@ -134,7 +134,7 @@
             <div id="serviceExpos" class="p-4 border border-gray-100">
               <div class="flex flex-row-reverse">
                 <div class="flex-1">
-                  <img src="~assets/images/salon.webp" alt="">
+                  <img src="~assets/images/salon-527x340.webp" alt="Image illustrant une exposition">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
@@ -206,7 +206,7 @@
             <div id="serviceSpecial" class="p-4 border border-gray-100">
               <div class="flex flex-row">
                 <div class="flex-1">
-                  <img src="~assets/images/heavy.webp" alt="">
+                  <img src="~assets/images/heavy-527x357.webp" alt="Porte char transportant une peleteuse">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
@@ -273,7 +273,7 @@
             <div id="serviceDem" class="p-4 border border-gray-100">
               <div class="flex flex-row-reverse">
                 <div class="flex-1">
-                  <img src="~assets/images/dem.webp" alt="">
+                  <img src="~assets/images/dem-527x264.webp" alt="Image de cartons">
                 </div>
 
                 <div class="flex-1 text-primary font-semibold px-4">
